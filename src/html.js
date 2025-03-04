@@ -48,3 +48,4 @@ HTML.propTypes = {
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
 }
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
