@@ -17,7 +17,7 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Section sm-padding="8px 0 8px 0" quarkly-title="Header-4">
+		<Section sm-padding="8px 0 8px 0" quarkly-title="Header-4" width="auto" height="auto">
 			<Override slot="SectionContent" flex-direction="row" justify-content="space-between" />
 			<Box
 				display="flex"
@@ -234,7 +234,13 @@ export default (() => {
 			display="flex"
 			flex-direction="column"
 		>
-			<Override slot="SectionContent" flex-wrap="wrap" flex-direction="row" />
+			<Override
+				slot="SectionContent"
+				flex-wrap="wrap"
+				flex-direction="row"
+				width="auto"
+				height="auto"
+			/>
 			<Text
 				margin="0px"
 				font="--headline1"
@@ -320,6 +326,8 @@ export default (() => {
 				flex-direction="column"
 				justify-content="space-between"
 				md-width="100%"
+				border-width="auto"
+				border-style="auto"
 			>
 				<Text margin="0px 0px 40px 0px" color="--light" font="--base">
 					We offer quick distribution to all DSPs for free if you're accepted (~7 days from submittion)
@@ -332,7 +340,7 @@ export default (() => {
 		<Section padding="80px 0 80px 0" sm-padding="60px 0 60px 0" background="--color-dark">
 			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" />
 			<Box
-				width="50%"
+				width="auto"
 				display="flex"
 				flex-direction="column"
 				justify-content="space-between"
@@ -340,6 +348,7 @@ export default (() => {
 				padding="0px 80px 0px 0px"
 				lg-padding="0px 30px 0px 0px"
 				md-padding="0px 0px 0px 0px"
+				height="auto"
 			>
 				<Text margin="0px 0px 0px 0px" color="--light" font="--headline2" md-margin="0px 0px 30px 0px">
 					Who do we distribute to?
@@ -352,7 +361,13 @@ export default (() => {
 				justify-content="space-between"
 				md-width="100%"
 			>
-				<Text margin="0px 0px 0px 0px" color="#F7FBFF" font="--base">
+				<Text
+					margin="0px 0px 0px 0px"
+					color="#F7FBFF"
+					font="--base"
+					width="auto"
+					height="auto"
+				>
 					Note: all Content Recognition services require exclusive rights to the instrumental
 					<br />
 					<br />
@@ -586,7 +601,6 @@ export default (() => {
 					<br />
 					YouTube Music
 					<br />
-					<br />
 				</Text>
 			</Box>
 		</Section>
@@ -610,7 +624,7 @@ export default (() => {
 			href={"https://quarkly.io/"}
 			target={"_blank"}
 		>
-	
+			Made on Quarkly
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"67c737959335410018cacb82"}>
@@ -619,18 +633,3 @@ export default (() => {
 		</RawHtml>
 	</Theme>;
 });
-
-
-if (typeof window !== 'undefined') {
-    window.addEventListener('resize', function() {
-        let width = window.innerWidth;
-        let height = window.innerHeight;
-
-        // Example: Adjust the size of an element based on window size
-        let element = document.getElementById('resizable-element');
-        element.style.width = width / 2 + 'px';
-        element.style.height = height / 2 + 'px';
-
-        console.log('Window resized to ' + width + 'x' + height);
-    });
-}
