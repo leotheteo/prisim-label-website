@@ -50,6 +50,8 @@ export default (() => {
 						font="--headline3"
 						sm-margin="0px 0 0px 0"
 						display="block"
+						width="auto"
+						height="auto"
 					>
 						Prism Audio{"\n\n"}
 					</Text>
@@ -58,10 +60,11 @@ export default (() => {
 			<Components.QuarklycommunityKitMobileSidePanel
 				menuPosition="full"
 				breakpoint="lg"
-				width="70%"
+				width="auto"
 				sm-width="50%"
 				md-width="50%"
 				lg-width="30%"
+				height="auto"
 			>
 				<Override slot="Children" md-display="flex" />
 				<Override
@@ -107,10 +110,10 @@ export default (() => {
 					top="24px"
 					right="24px"
 				/>
-				<Button type="link" href="https://docs.google.com/forms/d/e/1FAIpQLSeqxt2vzCF_F90cRN2j9tRbuOfIq2Eu6n1BJurDvkgJGNqxbg/viewform?usp=dialog">
+				<Button type="link" href="https://docs.google.com/forms/d/e/1FAIpQLSeqxt2vzCF_F90cRN2j9tRbuOfIq2Eu6n1BJurDvkgJGNqxbg/viewform?usp=dialog" width="auto" height="auto">
 					Apply
 				</Button>
-				<Button type="link" href="https://docs.google.com/forms/d/e/1FAIpQLScb0hygBn_AMHkJbDxHyqWkv8NiiX1dH2Kl_oPU50eMyJJ59Q/viewform?usp=dialog">
+				<Button type="link" href="https://docs.google.com/forms/d/e/1FAIpQLScb0hygBn_AMHkJbDxHyqWkv8NiiX1dH2Kl_oPU50eMyJJ59Q/viewform?usp=dialog" width="auto" height="auto">
 					For Clients
 				</Button>
 				<Box
@@ -246,9 +249,10 @@ export default (() => {
 				font="--headline1"
 				md-font="--headline2"
 				color="--lightD2"
-				width="25%"
+				width="auto"
 				padding="0px 32px 0px 0px"
 				display="block"
+				height="auto"
 			>
 				Who are we?
 			</Text>
@@ -256,8 +260,9 @@ export default (() => {
 				margin="0px"
 				font="--base"
 				color="--grey"
-				width="25%"
+				width="auto"
 				padding="0px 32px 0px 0px"
+				height="auto"
 			>
 				We're a multi-genre label that takes pride in promoting our diverse artists and ensuring their music reaches audiences quickly and efficiently through various Digital Service Providers (DSPs). Our expertise spans multiple music styles, allowing us to cater to a wide range of tastes and preferences.{"\n\n"}
 			</Text>
@@ -265,8 +270,9 @@ export default (() => {
 				margin="0px"
 				font="--base"
 				color="--grey"
-				width="25%"
+				width="auto"
 				padding="0px 32px 0px 0px"
+				height="auto"
 			>
 				<br />
 				Prism Audio distributes{" "}
@@ -297,8 +303,9 @@ export default (() => {
 				margin="0px"
 				font="--base"
 				color="--grey"
-				width="25%"
+				width="auto"
 				padding="0px 32px 0px 0px"
+				height="auto"
 			>
 				We accept any artist as long as they have a minimum of one release per month. Any artist from any genre works! If you're a part of a collective, that is perfectly fine! Being signed to any PRO's is okay as well, as long as you provide your IPI number.
 			</Text>
