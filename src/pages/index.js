@@ -621,14 +621,16 @@ export default (() => {
 });
 
 
-window.addEventListener('resize', function() {
-    let width = window.innerWidth;
-    let height = window.innerHeight;
+if (typeof window !== 'undefined') {
+    window.addEventListener('resize', function() {
+        let width = window.innerWidth;
+        let height = window.innerHeight;
 
-    // Example: Adjust the size of an element based on window size
-    let element = document.getElementById('resizable-element');
-    element.style.width = width / 2 + 'px';
-    element.style.height = height / 2 + 'px';
+        // Example: Adjust the size of an element based on window size
+        let element = document.getElementById('resizable-element');
+        element.style.width = width / 2 + 'px';
+        element.style.height = height / 2 + 'px';
 
-    console.log('Window resized to ' + width + 'x' + height);
-});
+        console.log('Window resized to ' + width + 'x' + height);
+    });
+}
