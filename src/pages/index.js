@@ -210,7 +210,7 @@ export default (() => {
 						flex-wrap="wrap"
 						lg-margin="24px 0px 0px 0px"
 					>
-						
+						<box>
 							</Override>
 							<Override
 								slot="link"
@@ -708,10 +708,6 @@ export default (() => {
 			transition={"--opacityOut"}
 			quarkly-title={"Badge"}
 			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"67c737959335410018cacb82"}>
