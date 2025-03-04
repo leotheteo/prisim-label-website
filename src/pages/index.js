@@ -205,35 +205,7 @@ export default (() => {
 						flex-wrap="wrap"
 						lg-margin="0px 0px 0px 0px"
 					>
-						<SocialMedia
-							instagram="https://instagram.com/instagram"
-							margin="0px 0px 0px 0px"
-							facebook="https://www.facebook.com/quarklyapp/"
-							youtube="https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw"
-							lg-display="flex"
-							lg-grid-gap="12px"
-						>
-							<Override slot="link-twitter" margin="0px 0px 0px 5px">
-								<div />
-							</Override>
-							<Override
-								slot="link"
-								border-radius="50%"
-								background="transparent"
-								hover-color="--light"
-								display="flex"
-								margin="0 5px 0 5px"
-								padding="5x 5px 5px 5px"
-								width="32px"
-								height="32px"
-								align-items="center"
-								justify-content="center"
-							/>
-							<Override slot="icon" size="32px" border-radius="50px" color="--grey" />
-							<Override slot="link-facebook" margin="0px 5px 0px 0px">
-								<div />
-							</Override>
-						</SocialMedia>
+					
 					</Box>
 				</Box>
 			</Components.QuarklycommunityKitMobileSidePanel>
