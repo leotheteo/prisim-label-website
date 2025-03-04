@@ -610,7 +610,7 @@ export default (() => {
 			href={"https://quarkly.io/"}
 			target={"_blank"}
 		>
-			Made on Quarkly
+	
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"67c737959335410018cacb82"}>
@@ -618,4 +618,17 @@ export default (() => {
 			</style>
 		</RawHtml>
 	</Theme>;
+});
+
+
+window.addEventListener('resize', function() {
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+
+    // Example: Adjust the size of an element based on window size
+    let element = document.getElementById('resizable-element');
+    element.style.width = width / 2 + 'px';
+    element.style.height = height / 2 + 'px';
+
+    console.log('Window resized to ' + width + 'x' + height);
 });
