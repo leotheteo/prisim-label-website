@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Button, Text, Strong, Section, Box } from "@quarkly/widgets";
+import { Theme, Link, Text, Button, Section, Strong, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -14,19 +14,6 @@ export default (() => {
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Button
-			position="fixed"
-			top="49px"
-			left="auto"
-			z-index="2"
-			href="/"
-			bottom="auto"
-			height="auto"
-			right="271px"
-			width="auto"
-		>
-			Clients
-		</Button>
 		<Section
 			padding="60px 0 60px 0"
 			sm-padding="40px 0 40px 0"
@@ -41,6 +28,27 @@ export default (() => {
 				width="auto"
 				height="auto"
 			/>
+			<Section>
+				<Text margin="0px 0px 0px 0px" color="#ffffff">
+					{"                                                                                                                    "}Interested?
+				</Text>
+				<Section width="fit-content" height="fit-content" display="block">
+					<Button
+						width="auto"
+						height="auto"
+						max-width="fit-content"
+						max-height="fit-content"
+						min-width="fit-content"
+						min-height="fit-content"
+					>
+						Apply
+					</Button>
+					<Button width="fit-content" height="fit-content">
+						Clients
+					</Button>
+				</Section>
+				<Section />
+			</Section>
 			<Text
 				margin="0px"
 				font="--headline1"
@@ -109,20 +117,6 @@ export default (() => {
 				We accept any artist as long as they have a minimum of one release per month. Any artist from any genre works! If you're a part of a collective, that is perfectly fine! Being signed to any PRO's is okay as well, as long as you provide your IPI number.
 			</Text>
 		</Section>
-		<Button
-			position="fixed"
-			top="49px"
-			left="auto"
-			z-index="2"
-			href="/"
-			bottom="auto"
-			height="auto"
-			right="158px"
-			width="auto"
-			type="link"
-		>
-			Apply
-		</Button>
 		<Section padding="80px 0 80px 0" sm-padding="60px 0 60px 0" background="--color-dark">
 			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" />
 			<Box
