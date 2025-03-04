@@ -47,5 +47,4 @@ HTML.propTypes = {
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-  <meta name="viewport" content="width=1280"> in head
-}
+  <meta name="viewport" content="width=1280">
