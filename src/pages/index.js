@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Button, Section, Strong, Box } from "@quarkly/widgets";
+import { Theme, Link, Section, Text, Strong, Box, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, Override } from "@quarkly/components";
+import { RawHtml, Override, Formspree } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -27,26 +27,10 @@ export default (() => {
 				flex-direction="row"
 				width="auto"
 				height="auto"
+				display="inline"
 			/>
 			<Section>
-				<Text margin="0px 0px 0px 0px" color="#ffffff">
-					{"                                                                                                                    "}Interested?
-				</Text>
-				<Section width="fit-content" height="fit-content" display="block">
-					<Button
-						width="auto"
-						height="auto"
-						max-width="fit-content"
-						max-height="fit-content"
-						min-width="fit-content"
-						min-height="fit-content"
-					>
-						Apply
-					</Button>
-					<Button width="fit-content" height="fit-content">
-						Clients
-					</Button>
-				</Section>
+				<Section width="fit-content" height="fit-content" display="block" />
 				<Section />
 			</Section>
 			<Text
@@ -68,6 +52,7 @@ export default (() => {
 				width="auto"
 				padding="0px 32px 0px 0px"
 				height="auto"
+				display="grid"
 			>
 				We're a multi-genre label that takes pride in promoting our diverse artists and ensuring their music reaches audiences quickly and efficiently through various Digital Service Providers (DSPs). Our expertise spans multiple music styles, allowing us to cater to a wide range of tastes and preferences.{"\n\n"}
 			</Text>
@@ -78,6 +63,7 @@ export default (() => {
 				width="auto"
 				padding="0px 32px 0px 0px"
 				height="auto"
+				display="inline-block"
 			>
 				<br />
 				Prism Audio distributes to
@@ -113,6 +99,7 @@ export default (() => {
 				width="auto"
 				padding="0px 32px 0px 0px"
 				height="auto"
+				display="inline-block"
 			>
 				We accept any artist as long as they have a minimum of one release per month. Any artist from any genre works! If you're a part of a collective, that is perfectly fine! Being signed to any PRO's is okay as well, as long as you provide your IPI number.
 			</Text>
@@ -209,64 +196,10 @@ export default (() => {
 					Audible Magic – Rights360
 					<br />
 					<br />
-					Audiomack
-					<br />
-					<br />
-					AWA
-					<br />
-					<br />
-					Beatport
-					<br />
-					<br />
-					Beatsource
-					<br />
-					<br />
-					BMAT (Commercial)
-					<br />
-					<br />
-					Boomplay
-					<br />
-					<br />
-					Canva (7digital)
-					<br />
-					<br />
-					Claro Musica (iMusica)
-					<br />
-					<br />
-					Curve
-					<br />
-					<br />
-					Deedo (7digital)
-					<br />
-					<br />
-					Deezer
-					<br />
-					<br />
-					Dial by i.am+ (7digital)
-					<br />
-					<br />
-					Electric Jukebox (7digital)
-					<br />
-					<br />
-					eMusic (7digital)
-					<br />
-					<br />
 					Facebook (Meta)
 					<br />
 					<br />
 					Global Eagle (7digital)
-					<br />
-					<br />
-					Global Radio (7digital)
-					<br />
-					<br />
-					GrandPad (7digital)
-					<br />
-					<br />
-					Gracenote
-					<br />
-					<br />
-					iHeartRadio
 					<br />
 					<br />
 					iMusica
@@ -275,10 +208,8 @@ export default (() => {
 					Instagram (Meta)
 					<br />
 					<br />
-					Jaxsta
 					<br />
-					<br />
-					JioSaavn
+					aioSaavn
 					<br />
 					<br />
 					JOOX
@@ -326,33 +257,6 @@ export default (() => {
 					Pandora
 					<br />
 					<br />
-					PEEX (7digital)
-					<br />
-					<br />
-					Peloton
-					<br />
-					<br />
-					Pinterest (7digital)
-					<br />
-					<br />
-					Playlist for Life (7digital)
-					<br />
-					<br />
-					Playster (7digital)
-					<br />
-					<br />
-					QOBUZ
-					<br />
-					<br />
-					Qub Musique (QOBUZ)
-					<br />
-					<br />
-					QQ Music (Tencent)
-					<br />
-					<br />
-					Roxi (7digital)
-					<br />
-					<br />
 					RX Music
 					<br />
 					<br />
@@ -377,15 +281,6 @@ export default (() => {
 					Styngr (Audible Magic – Fulfillment360)
 					<br />
 					<br />
-					Supernatural
-					<br />
-					<br />
-					TDC (7digital)
-					<br />
-					<br />
-					Tencent (Kugou Music, Kuwo Music, QQ Music, WeSing)
-					<br />
-					<br />
 					TIDAL
 					<br />
 					<br />
@@ -404,18 +299,69 @@ export default (() => {
 					VL Group
 					<br />
 					<br />
-					WeSing (TenCent)
-					<br />
-					<br />
-					Weyv (7digital)
-					<br />
-					<br />
 					YouTube Content ID
 					<br />
 					<br />
 					YouTube Music
-					<br />
 				</Text>
+			</Box>
+		</Section>
+		<Section background="--color-dark" color="--dark" padding="64px 0 64px 0">
+			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap" border-color="#ffffff">
+				<Box padding="16px 16px 16px 16px" width="50%" lg-width="100%">
+					<Box>
+						<Text
+							font="--base"
+							color="--grey"
+							letter-spacing="1px"
+							text-transform="uppercase"
+							margin="0"
+						>
+							Contact
+						</Text>
+						<Text font="--headline2" max-width="500px" margin="10px 0 0 0" color="#ffffff">
+							Email us, we would love to hear form you
+						</Text>
+					</Box>
+				</Box>
+				<Box width="50%" padding="8px 8px 8px 8px" lg-width="100%">
+					<Box>
+						<Formspree endpoint="xeqpgrlv">
+							<Box
+								gap="16px"
+								display="grid"
+								flex-direction="row"
+								flex-wrap="wrap"
+								grid-template-columns="repeat(2, 1fr)"
+								grid-gap="16px"
+							>
+								<Box sm-width="100%" display="flex" flex-direction="column">
+									<Text font="--base" margin="0 0 4px 0" color="#ffffff">
+										Name
+									</Text>
+									<Input width="100%" name="name" type="text" />
+								</Box>
+								<Box sm-width="100%" display="flex" flex-direction="column">
+									<Text font="--base" margin="0 0 4px 0" color="#ffffff">
+										Email
+									</Text>
+									<Input width="100%" type="email" name="email" />
+								</Box>
+								<Box display="flex" flex-direction="column" grid-column="1 / span 2">
+									<Text font="--base" margin="0 0 4px 0" color="#ffffff">
+										Message
+									</Text>
+									<Input as="textarea" rows="4" width="100%" name="message" />
+								</Box>
+								<Box display="flex" flex-direction="column" align-items="flex-start" grid-column="1 / span 2">
+									<Button>
+										Send
+									</Button>
+								</Box>
+							</Box>
+						</Formspree>
+					</Box>
+				</Box>
 			</Box>
 		</Section>
 		<Link
