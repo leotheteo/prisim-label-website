@@ -18,14 +18,20 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Section sm-padding="8px 0 8px 0" quarkly-title="Header-4" width="auto" height="auto">
-			<Override slot="SectionContent" flex-direction="row" justify-content="space-between" />
+			<Override
+				slot="SectionContent"
+				flex-direction="row"
+				justify-content="space-between"
+				width="auto"
+				height="auto"
+			/>
 			<Box
 				display="flex"
 				padding="12px 0"
 				justify-content="space-between"
 				align-items="flex-start"
 				flex-direction="row"
-				width="30%"
+				width="auto"
 				sm-width="50%"
 				sm-align-items="center"
 				sm-flex-direction="row"
@@ -33,6 +39,7 @@ export default (() => {
 				md-width="50%"
 				lg-width="70%"
 				md-justify-content="flex-start"
+				height="auto"
 			>
 				<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="12px">
 					<Image
@@ -110,6 +117,7 @@ export default (() => {
 					top="24px"
 					right="24px"
 				/>
+				<Override slot="Wrapper" width="auto" height="auto" />
 				<Button type="link" href="https://docs.google.com/forms/d/e/1FAIpQLSeqxt2vzCF_F90cRN2j9tRbuOfIq2Eu6n1BJurDvkgJGNqxbg/viewform?usp=dialog" width="auto" height="auto">
 					Apply
 				</Button>
@@ -275,7 +283,7 @@ export default (() => {
 				height="auto"
 			>
 				<br />
-				Prism Audio distributes{" "}
+				Prism Audio distributes to
 				<br />
 				Spotify
 				<br />
@@ -297,6 +305,8 @@ export default (() => {
 					pointer-events="auto"
 				>
 					{" "}if you have the rights.
+					<br />
+					<br />
 				</Strong>
 			</Text>
 			<Text
@@ -340,7 +350,7 @@ export default (() => {
 					We offer quick distribution to all DSPs for free if you're accepted (~7 days from submittion)
 				</Text>
 				<Text margin="0px 0px 0px 0px" color="--light" font="--base">
-					We also do mixing and mastering for a small fee of $15, signed to this label or not. We require your vocals in .wav files and the instrumental in .MP3 or .wav.{" "}
+					We also do mixing and mastering for a small fee of $15, signed to this label or not. We require your vocals in .wav files and the instrumental in .mp3 or .wav.{" "}
 				</Text>
 			</Box>
 		</Section>
