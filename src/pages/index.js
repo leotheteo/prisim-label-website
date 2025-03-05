@@ -1,12 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, LinkBox, Button, Box, Icon, Section, Strong, Input } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, LinkBox, Button, Box, Section, Strong, Input } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, Override, SocialMedia, Formspree } from "@quarkly/components";
-import * as Components from "components";
-import { FiMenu } from "react-icons/fi";
-import { GiFairyWings } from "react-icons/gi";
+import { RawHtml, Override, Formspree } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -67,178 +64,10 @@ export default (() => {
 						Prism Audio{" "}
 					</Text>
 				</LinkBox>
-				<Button width="auto" height="auto">
-					Button
-				</Button>
-				<Button width="auto" height="auto">
-					Button
+				<Button width="auto" height="auto" sm-type="link" sm-href="https://docs.google.com/forms/d/e/1FAIpQLSeqxt2vzCF_F90cRN2j9tRbuOfIq2Eu6n1BJurDvkgJGNqxbg/viewform?usp=header">
+					Apply
 				</Button>
 			</Box>
-			<Components.QuarklycommunityKitMobileSidePanel
-				menuPosition="full"
-				breakpoint="lg"
-				width="100%"
-				sm-width="50%"
-				md-width="50%"
-				lg-width="30%"
-				justify-content="center"
-				lg-justify-content="flex-end"
-			>
-				<Override slot="Children" md-display="flex" />
-				<Override
-					slot="Content"
-					padding="0px 0px 0px 0px"
-					background="rgba(255, 255, 255, 0)"
-					lg-background="#ffffff"
-					lg-margin="0px 0px 0px 0px"
-				/>
-				<Override
-					slot="Button Text"
-					font="normal 600 16px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
-					text-transform="uppercase"
-					letter-spacing="1px"
-					sm-font="normal 600 14px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
-					sm-margin="0px 2px 0px 0px"
-					lg-margin="0px 0px 0px 0px"
-				/>
-				<Override
-					slot="Button Icon :closed"
-					category="fi"
-					icon={FiMenu}
-					size="32px"
-					padding="5px 7px 5px 7px"
-					border-radius="50px"
-				/>
-						<Link/>
-				<Override
-					slot="Button Icon"
-					width="28px"
-					height="28px"
-					category="fi"
-					icon={FiMenu}
-					color="--dark"
-					size="24px"
-					lg-width="32px"
-					lg-height="32px"
-				/>
-				<Override
-					slot="Cross"
-					lg-width="32px"
-					lg-height="32px"
-					size="32px"
-					top="24px"
-					right="24px"
-				/>
-				<Box
-					align-items="center"
-					lg-justify-content="center"
-					lg-align-items="flex-start"
-					justify-content="center"
-					display="flex"
-					lg-flex-direction="column"
-					lg-margin="0px auto 0px auto"
-					lg-min-width="300px"
-					lg-max-width="1280px"
-					lg-width="90%"
-					lg-padding="24px 0px 48px 0px"
-				>
-					<Box
-						display="none"
-						lg-width="100%"
-						lg-margin="0px 0px 24px 0px"
-						lg-display="flex"
-						lg-padding="12px 0px 12px 0px"
-					>
-						<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="18px">
-							<Icon category="gi" icon={GiFairyWings} color="#6d32ec" size="37px" />
-							<Text
-								margin="0"
-								md-margin="0px 0 0px 0"
-								text-align="left"
-								font="--headline3"
-								sm-margin="0px 0 0px 0"
-								display="block"
-							>
-								Awesome Company
-							</Text>
-						</LinkBox>
-					</Box>
-					<Components.QuarklycommunityKitMenu
-						display="flex"
-						filterMode="exclude"
-						filterPages="/index"
-						grid-gap="8px"
-						lg-flex-direction="column"
-						lg-padding="6px 0px 6px 0px"
-						lg-margin="0px 0px 24px 0px"
-						align-items="center"
-						flex-wrap="wrap"
-						overflow-x="visible"
-						overflow-y="visible"
-						lg-align-items="flex-start"
-					>
-						<Override
-							slot="link"
-							color="--darkL2"
-							hover-color="--primary"
-							font="--lead"
-							text-decoration-line="initial"
-							transition="color 0.1s ease 0s"
-							lg-font="--lead"
-						/>
-						<Override slot="item-active" border-width={0} />
-						<Override slot="item" padding="6px 8px 6px 8px" />
-						<Override slot="link-active" cursor="default" color="--primary" />
-						<Override slot="link-about" />
-					</Components.QuarklycommunityKitMenu>
-					<Box
-						width="25%"
-						display="none"
-						lg-width="100%"
-						lg-flex-direction="column"
-						lg-align-items="flex-start"
-						lg-display="flex"
-						justify-content="space-around"
-						align-items="center"
-						flex-wrap="wrap"
-						lg-margin="0px 0px 0px 0px"
-					>
-						<Link
-							font="--lead"
-							padding="10px 0px 10px 0px"
-							margin="0px 0px 6px 0px"
-							href="tel:12345678"
-							text-decoration-line="initial"
-							color="--dark"
-							lg-margin="0px 0px 24px 0px"
-						>
-							+1(234)567-89-00
-						
-						>
-							<Override slot="link-twitter" margin="0px 0px 0px 5px">
-								<div />
-							</Override>
-							<Override
-								slot="link"
-								border-radius="50%"
-								background="transparent"
-								hover-color="--light"
-								display="flex"
-								margin="0 5px 0 5px"
-								padding="5x 5px 5px 5px"
-								width="32px"
-								height="32px"
-								align-items="center"
-								justify-content="center"
-							/>
-							<Override slot="icon" size="32px" border-radius="50px" color="--darkL2" />
-							<Override slot="link-facebook" margin="0px 5px 0px 0px">
-								<div />
-							</Override>
-						</SocialMedia>
-					</Box>
-				</Box>
-			</Components.QuarklycommunityKitMobileSidePanel>
 		</Section>
 		<Section
 			padding="60px 0 60px 0"
