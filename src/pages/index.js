@@ -109,6 +109,7 @@ export default (() => {
 					padding="5px 7px 5px 7px"
 					border-radius="50px"
 				/>
+						<Link/>
 				<Override
 					slot="Button Icon"
 					width="28px"
