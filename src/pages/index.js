@@ -32,8 +32,9 @@ export default (() => {
 				flex-direction="row"
 				justify-content="space-between"
 				max-width="100%"
-				width="100%"
+				width="auto"
 				padding="0px 24px 0px 24px"
+				height="auto"
 			/>
 			<Box
 				display="flex"
