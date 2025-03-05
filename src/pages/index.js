@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Section, Text, Strong, Box, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, LinkBox, Box, Section, Strong, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, Formspree } from "@quarkly/components";
@@ -20,6 +20,106 @@ export default (() => {
 			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"} />
 			<meta name={"msapplication-TileColor"} content={"#272782"} />
 		</Helmet>
+		<Section
+			sm-padding="8px 0 8px 0"
+			quarkly-title="Header-6"
+			padding="24px 0px 24px 0px"
+			width="auto"
+			height="auto"
+		>
+			<Override
+				slot="SectionContent"
+				flex-direction="row"
+				justify-content="space-between"
+				max-width="100%"
+				width="100%"
+				padding="0px 24px 0px 24px"
+			/>
+			<Box
+				display="flex"
+				padding="12px 0"
+				justify-content="center"
+				align-items="flex-start"
+				flex-direction="row"
+				width="20%"
+				sm-width="50%"
+				sm-align-items="center"
+				sm-flex-direction="row"
+				sm-justify-content="flex-start"
+				md-width="50%"
+				lg-width="20%"
+				md-justify-content="flex-start"
+				md-order="-1"
+			>
+				<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="12px">
+					<Image src="https://uploads.quarkly.io/6457b971d28fe100213a0f35/images/flower-logo-template.svg?v=2023-08-06T19:34:51.878Z" display="block" width="36px" height="36px" />
+					<Text
+						margin="0"
+						md-margin="0px 0 0px 0"
+						text-align="left"
+						font="--lead"
+						sm-margin="0px 0 0px 0"
+						display="block"
+					>
+						Company
+					</Text>
+				</LinkBox>
+			</Box>
+			<Box
+				display="flex"
+				padding="12px 0"
+				justify-content="flex-end"
+				align-items="flex-start"
+				flex-direction="row"
+				width="auto"
+				sm-width="50%"
+				sm-align-items="center"
+				sm-flex-direction="row"
+				sm-justify-content="flex-start"
+				md-width="50%"
+				lg-width="40%"
+				md-justify-content="flex-start"
+				md-display="none"
+				height="auto"
+			>
+				<Link
+					border-radius="8px"
+					href="#"
+					text-decoration-line="initial"
+					border-style="solid"
+					sm-padding="5px 10px 5px 10px"
+					md-padding="5px 10px 5px 10px"
+					sm-margin="10px 0px 10px 0px"
+					font="--base"
+					color="--darkL1"
+					margin="0px 0px 0px 34px"
+					md-margin="10px 0px 0px 0px"
+					border-width="2px"
+					padding="4px 12px 5px 12px"
+					border-color="--color-darkL1"
+					width="auto"
+					height="auto"
+				>
+					Apply
+				</Link>
+				<Link
+					font="--base"
+					text-decoration-line="initial"
+					margin="0px 0px 0px 16px"
+					background="--color-darkL1"
+					border-radius="8px"
+					md-margin="0px 0px 0px 14px"
+					href="#"
+					color="#ffffff"
+					padding="6px 12px 7px 12px"
+					md-order="1"
+					width="auto"
+					height="auto"
+				>
+					For Clients
+				</Link>
+			</Box>
+		</Section>
 		<Section
 			padding="60px 0 60px 0"
 			sm-padding="40px 0 40px 0"
@@ -60,6 +160,7 @@ export default (() => {
 				padding="0px 32px 0px 0px"
 				height="auto"
 				display="grid"
+				text-align="center"
 			>
 				We're a multi-genre label that takes pride in promoting our diverse artists and ensuring their music reaches audiences quickly and efficiently through various Digital Service Providers (DSPs). Our expertise spans multiple music styles, allowing us to cater to a wide range of tastes and preferences.{"\n\n"}
 			</Text>
@@ -73,17 +174,8 @@ export default (() => {
 				display="inline-block"
 			>
 				<br />
-				Prism Audio distributes to
 				<br />
-				Spotify
 				<br />
-				Apple Music
-				<br />
-				Amazon Music
-				<br />
-				YouTube Music
-				<br />
-				And YouTube Content ID,
 				<Strong
 					overflow-wrap="normal"
 					word-break="normal"
@@ -94,8 +186,6 @@ export default (() => {
 					user-select="auto"
 					pointer-events="auto"
 				>
-					{" "}if you have the rights.
-					<br />
 					<br />
 				</Strong>
 			</Text>
@@ -107,6 +197,7 @@ export default (() => {
 				padding="0px 32px 0px 0px"
 				height="auto"
 				display="inline-block"
+				text-align="center"
 			>
 				We accept any artist as long as they have a minimum of one release per month. Any artist from any genre works! If you're a part of a collective, that is perfectly fine! Being signed to any PRO's is okay as well, as long as you provide your IPI number.
 			</Text>
@@ -175,6 +266,7 @@ export default (() => {
 					font="--base"
 					width="auto"
 					height="auto"
+					text-align="center"
 				>
 					Note: all Content Recognition services require exclusive rights to the instrumental
 					<br />
@@ -203,10 +295,7 @@ export default (() => {
 					Audible Magic – Rights360
 					<br />
 					<br />
-					Facebook (Meta)
-					<br />
-					<br />
-					Instagram (Meta)
+					Facebook and Instagram
 					<br />
 					<br />
 					aioSaavn
@@ -219,9 +308,6 @@ export default (() => {
 					<br />
 					<br />
 					Kuaishou
-					<br />
-					<br />
-					Meta (Facebook and Instagram)
 					<br />
 					<br />
 					Mixcloud
