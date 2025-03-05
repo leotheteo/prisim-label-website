@@ -67,10 +67,10 @@ export default (() => {
 						Prism Audio{" "}
 					</Text>
 				</LinkBox>
-				<Button>
+				<Button width="auto" height="auto">
 					Button
 				</Button>
-				<Button>
+				<Button width="auto" height="auto">
 					Button
 				</Button>
 			</Box>
