@@ -206,14 +206,7 @@ export default (() => {
 					Facebook (Meta)
 					<br />
 					<br />
-					Global Eagle (7digital)
-					<br />
-					<br />
-					iMusica
-					<br />
-					<br />
 					Instagram (Meta)
-					<br />
 					<br />
 					<br />
 					aioSaavn
@@ -228,22 +221,10 @@ export default (() => {
 					Kuaishou
 					<br />
 					<br />
-					Kugou (Tencent)
-					<br />
-					<br />
-					Kuwo (Tencent)
-					<br />
-					<br />
 					Meta (Facebook and Instagram)
 					<br />
 					<br />
 					Mixcloud
-					<br />
-					<br />
-					MoodMedia (7digital)
-					<br />
-					<br />
-					Mus.uy (7digital)
 					<br />
 					<br />
 					Napster
@@ -252,13 +233,7 @@ export default (() => {
 					NetEase Cloud Music
 					<br />
 					<br />
-					NEC (7digital)
-					<br />
-					<br />
 					Nuuday
-					<br />
-					<br />
-					Onkyo (7digital)
 					<br />
 					<br />
 					Pandora
@@ -279,9 +254,6 @@ export default (() => {
 					SoundCloud
 					<br />
 					<br />
-					Soundtrack Your Brand (7digital)
-					<br />
-					<br />
 					Spotify
 					<br />
 					<br />
@@ -294,12 +266,6 @@ export default (() => {
 					TikTok
 					<br />
 					<br />
-					TouchTunes
-					<br />
-					<br />
-					Traxsource
-					<br />
-					<br />
 					Trebel
 					<br />
 					<br />
@@ -310,6 +276,9 @@ export default (() => {
 					<br />
 					<br />
 					YouTube Music
+					<br />
+					<br />
+					Many more more not listed here. Contact us for the full list.
 				</Text>
 			</Box>
 		</Section>
