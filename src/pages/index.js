@@ -195,7 +195,7 @@ export default (() => {
 				border-style="auto"
 			>
 				<Text margin="0px 0px 40px 0px" color="--light" font="--base">
-					We offer quick distribution to all DSPs for free if you're accepted (~7 days from submittion)
+					We offer quick distribution to all DSPs for free if you're accepted (~7 days from submission)
 				</Text>
 				<Text margin="0px 0px 0px 0px" color="--light" font="--base">
 					We also do mixing and mastering for a small fee of $15, signed to this label or not. We require your vocals in .wav files and the instrumental in .mp3 or .wav.{" "}
@@ -405,7 +405,26 @@ export default (() => {
 			</Box>
 		</Section>
 		<Link
-
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"67c737959335410018cacb82"}>
