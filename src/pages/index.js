@@ -49,6 +49,8 @@ export default (() => {
 					display="block"
 					width="32px"
 					height="32px"
+					sm-width="64px"
+					sm-height="64px"
 					srcSet="https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=3200 3200w"
 					sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
 				/>
@@ -60,6 +62,7 @@ export default (() => {
 						font="--headline3"
 						sm-margin="0px 0 0px 0"
 						display="block"
+						sm-text-align="center"
 					>
 						Prism Audio{" "}
 					</Text>
@@ -172,7 +175,13 @@ export default (() => {
 				md-padding="0px 0px 0px 0px"
 			>
 				<Text margin="0px 0px 0px 0px" color="--orange" font="--lead" md-margin="0px 0px 20px 0px" />
-				<Text margin="0px 0px 0px 0px" color="--light" font="--headline2" md-margin="0px 0px 30px 0px">
+				<Text
+					margin="0px 0px 0px 0px"
+					color="--light"
+					font="--headline2"
+					md-margin="0px 0px 30px 0px"
+					sm-text-align="center"
+				>
 					Services
 				</Text>
 			</Box>
@@ -206,7 +215,13 @@ export default (() => {
 				md-padding="0px 0px 0px 0px"
 				height="auto"
 			>
-				<Text margin="0px 0px 0px 0px" color="--light" font="--headline2" md-margin="0px 0px 30px 0px">
+				<Text
+					margin="0px 0px 0px 0px"
+					color="--light"
+					font="--headline2"
+					md-margin="0px 0px 30px 0px"
+					sm-text-align="center"
+				>
 					Who do we distribute to?
 				</Text>
 			</Box>
@@ -338,7 +353,13 @@ export default (() => {
 						>
 							Contact
 						</Text>
-						<Text font="--headline2" max-width="500px" margin="10px 0 0 0" color="#ffffff">
+						<Text
+							font="--headline2"
+							max-width="500px"
+							margin="10px 0 0 0"
+							color="#ffffff"
+							sm-text-align="center"
+						>
 							Send demos and contact us here!
 						</Text>
 					</Box>
