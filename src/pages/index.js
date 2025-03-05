@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, LinkBox, Button, Box, Section, Strong, Input } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, LinkBox, Box, Button, Structure, Section, Strong, Input } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, Formspree } from "@quarkly/components";
@@ -64,10 +64,17 @@ export default (() => {
 						Prism Audio{" "}
 					</Text>
 				</LinkBox>
-				<Button width="auto" height="auto" sm-type="link" sm-href="https://docs.google.com/forms/d/e/1FAIpQLSeqxt2vzCF_F90cRN2j9tRbuOfIq2Eu6n1BJurDvkgJGNqxbg/viewform?usp=header">
-					Apply
-				</Button>
 			</Box>
+			<Structure>
+				<Override slot="Content">
+					<Override slot="cell-0" />
+					<Override slot="cell-1">
+						<Button width="auto" height="auto" sm-type="link" sm-href="https://docs.google.com/forms/d/e/1FAIpQLSeqxt2vzCF_F90cRN2j9tRbuOfIq2Eu6n1BJurDvkgJGNqxbg/viewform?usp=header">
+							Apply
+						</Button>
+					</Override>
+				</Override>
+			</Structure>
 		</Section>
 		<Section
 			padding="60px 0 60px 0"
