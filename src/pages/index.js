@@ -1,9 +1,12 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, LinkBox, Box, Section, Strong, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Image, Text, LinkBox, Button, Box, Icon, Section, Strong, Input } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, Override, Formspree } from "@quarkly/components";
+import { RawHtml, Override, SocialMedia, Formspree } from "@quarkly/components";
+import * as Components from "components";
+import { FiMenu } from "react-icons/fi";
+import { GiFairyWings } from "react-icons/gi";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -20,113 +23,228 @@ export default (() => {
 			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"} />
 			<meta name={"msapplication-TileColor"} content={"#272782"} />
 		</Helmet>
-		<Section
-			sm-padding="8px 0 8px 0"
-			quarkly-title="Header-6"
-			padding="24px 0px 24px 0px"
-			width="auto"
-			height="auto"
-		>
+		<Section sm-padding="8px 0 8px 0" quarkly-title="Header-2">
 			<Override
 				slot="SectionContent"
-				flex-direction="row"
+				flex-direction="column"
 				justify-content="space-between"
-				max-width="100%"
-				width="auto"
-				padding="0px 24px 0px 24px"
-				height="auto"
+				align-items="center"
+				lg-flex-direction="row"
 			/>
 			<Box
 				display="flex"
-				padding="12px 0"
+				padding="12px 0 18px 0"
 				justify-content="center"
 				align-items="flex-start"
 				flex-direction="row"
-				width="20%"
+				width="100%"
 				sm-width="50%"
 				sm-align-items="center"
 				sm-flex-direction="row"
 				sm-justify-content="flex-start"
 				md-width="50%"
-				lg-width="20%"
+				lg-width="70%"
 				md-justify-content="flex-start"
-				md-order="-1"
+				lg-justify-content="flex-start"
 			>
-				<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="12px">
-					<Image
-						src="https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"
-						display="block"
-						width="36px"
-						height="36px"
-						srcSet="https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=3200 3200w"
-						sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
-					/>
+				<Image
+					src="https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"
+					display="block"
+					width="32px"
+					height="32px"
+					srcSet="https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=3200 3200w"
+					sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
+				/>
+				<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="18px">
 					<Text
 						margin="0"
 						md-margin="0px 0 0px 0"
 						text-align="left"
-						font="--lead"
+						font="--headline3"
 						sm-margin="0px 0 0px 0"
 						display="block"
 					>
-						Prism Audio
+						Prism Audio{" "}
 					</Text>
 				</LinkBox>
+				<Button>
+					Button
+				</Button>
+				<Button>
+					Button
+				</Button>
 			</Box>
-			<Box
-				display="flex"
-				padding="12px 0"
-				justify-content="flex-end"
-				align-items="flex-start"
-				flex-direction="row"
-				width="auto"
+			<Components.QuarklycommunityKitMobileSidePanel
+				menuPosition="full"
+				breakpoint="lg"
+				width="100%"
 				sm-width="50%"
-				sm-align-items="center"
-				sm-flex-direction="row"
-				sm-justify-content="flex-start"
 				md-width="50%"
-				lg-width="40%"
-				md-justify-content="flex-start"
-				md-display="none"
-				height="auto"
+				lg-width="30%"
+				justify-content="center"
+				lg-justify-content="flex-end"
 			>
-				<Link
-					border-radius="8px"
-					href="#"
-					text-decoration-line="initial"
-					border-style="solid"
-					sm-padding="5px 10px 5px 10px"
-					md-padding="5px 10px 5px 10px"
-					sm-margin="10px 0px 10px 0px"
-					font="--base"
-					color="--darkL1"
-					margin="0px 0px 0px 34px"
-					md-margin="10px 0px 0px 0px"
-					border-width="2px"
-					padding="4px 12px 5px 12px"
-					border-color="--color-darkL1"
-					width="auto"
-					height="auto"
+				<Override slot="Children" md-display="flex" />
+				<Override
+					slot="Content"
+					padding="0px 0px 0px 0px"
+					background="rgba(255, 255, 255, 0)"
+					lg-background="#ffffff"
+					lg-margin="0px 0px 0px 0px"
+				/>
+				<Override
+					slot="Button Text"
+					font="normal 600 16px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					text-transform="uppercase"
+					letter-spacing="1px"
+					sm-font="normal 600 14px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					sm-margin="0px 2px 0px 0px"
+					lg-margin="0px 0px 0px 0px"
+				/>
+				<Override
+					slot="Button Icon :closed"
+					category="fi"
+					icon={FiMenu}
+					size="32px"
+					padding="5px 7px 5px 7px"
+					border-radius="50px"
+				/>
+				<Override
+					slot="Button Icon"
+					width="28px"
+					height="28px"
+					category="fi"
+					icon={FiMenu}
+					color="--dark"
+					size="24px"
+					lg-width="32px"
+					lg-height="32px"
+				/>
+				<Override
+					slot="Cross"
+					lg-width="32px"
+					lg-height="32px"
+					size="32px"
+					top="24px"
+					right="24px"
+				/>
+				<Box
+					align-items="center"
+					lg-justify-content="center"
+					lg-align-items="flex-start"
+					justify-content="center"
+					display="flex"
+					lg-flex-direction="column"
+					lg-margin="0px auto 0px auto"
+					lg-min-width="300px"
+					lg-max-width="1280px"
+					lg-width="90%"
+					lg-padding="24px 0px 48px 0px"
 				>
-					Apply
-				</Link>
-				<Link
-					font="--base"
-					text-decoration-line="initial"
-					margin="0px 0px 0px 16px"
-					background="--color-darkL1"
-					border-radius="8px"
-					md-margin="0px 0px 0px 14px"
-					href="#"
-					color="#ffffff"
-					padding="6px 12px 7px 12px"
-					md-order="1"
-					width="auto"
-					height="auto"
-				>
-					For Clients
-				</Link>
-			</Box>
+					<Box
+						display="none"
+						lg-width="100%"
+						lg-margin="0px 0px 24px 0px"
+						lg-display="flex"
+						lg-padding="12px 0px 12px 0px"
+					>
+						<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="18px">
+							<Icon category="gi" icon={GiFairyWings} color="#6d32ec" size="37px" />
+							<Text
+								margin="0"
+								md-margin="0px 0 0px 0"
+								text-align="left"
+								font="--headline3"
+								sm-margin="0px 0 0px 0"
+								display="block"
+							>
+								Awesome Company
+							</Text>
+						</LinkBox>
+					</Box>
+					<Components.QuarklycommunityKitMenu
+						display="flex"
+						filterMode="exclude"
+						filterPages="/index"
+						grid-gap="8px"
+						lg-flex-direction="column"
+						lg-padding="6px 0px 6px 0px"
+						lg-margin="0px 0px 24px 0px"
+						align-items="center"
+						flex-wrap="wrap"
+						overflow-x="visible"
+						overflow-y="visible"
+						lg-align-items="flex-start"
+					>
+						<Override
+							slot="link"
+							color="--darkL2"
+							hover-color="--primary"
+							font="--lead"
+							text-decoration-line="initial"
+							transition="color 0.1s ease 0s"
+							lg-font="--lead"
+						/>
+						<Override slot="item-active" border-width={0} />
+						<Override slot="item" padding="6px 8px 6px 8px" />
+						<Override slot="link-active" cursor="default" color="--primary" />
+						<Override slot="link-about" />
+					</Components.QuarklycommunityKitMenu>
+					<Box
+						width="25%"
+						display="none"
+						lg-width="100%"
+						lg-flex-direction="column"
+						lg-align-items="flex-start"
+						lg-display="flex"
+						justify-content="space-around"
+						align-items="center"
+						flex-wrap="wrap"
+						lg-margin="0px 0px 0px 0px"
+					>
+						<Link
+							font="--lead"
+							padding="10px 0px 10px 0px"
+							margin="0px 0px 6px 0px"
+							href="tel:12345678"
+							text-decoration-line="initial"
+							color="--dark"
+							lg-margin="0px 0px 24px 0px"
+						>
+							+1(234)567-89-00
+						</Link>
+						<SocialMedia
+							instagram="https://instagram.com/instagram"
+							margin="0px 0px 0px 0px"
+							facebook="https://www.facebook.com/quarklyapp/"
+							youtube="https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw"
+							lg-display="flex"
+							lg-grid-gap="12px"
+						>
+							<Override slot="link-twitter" margin="0px 0px 0px 5px">
+								<div />
+							</Override>
+							<Override
+								slot="link"
+								border-radius="50%"
+								background="transparent"
+								hover-color="--light"
+								display="flex"
+								margin="0 5px 0 5px"
+								padding="5x 5px 5px 5px"
+								width="32px"
+								height="32px"
+								align-items="center"
+								justify-content="center"
+							/>
+							<Override slot="icon" size="32px" border-radius="50px" color="--darkL2" />
+							<Override slot="link-facebook" margin="0px 5px 0px 0px">
+								<div />
+							</Override>
+						</SocialMedia>
+					</Box>
+				</Box>
+			</Components.QuarklycommunityKitMobileSidePanel>
 		</Section>
 		<Section
 			padding="60px 0 60px 0"
