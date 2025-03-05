@@ -212,14 +212,7 @@ export default (() => {
 							lg-margin="0px 0px 24px 0px"
 						>
 							+1(234)567-89-00
-						</Link>
-						<SocialMedia
-							instagram="https://instagram.com/instagram"
-							margin="0px 0px 0px 0px"
-							facebook="https://www.facebook.com/quarklyapp/"
-							youtube="https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw"
-							lg-display="flex"
-							lg-grid-gap="12px"
+						
 						>
 							<Override slot="link-twitter" margin="0px 0px 0px 5px">
 								<div />
