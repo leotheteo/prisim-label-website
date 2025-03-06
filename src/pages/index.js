@@ -1,11 +1,12 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Section, Strong, Icon, Span, List, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Section, Strong, Icon, Span, List, Input, Button, LinkBox } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, Formspree } from "@quarkly/components";
 import * as Components from "components";
 import { FiMusic, FiEdit } from "react-icons/fi";
+import { FaFacebook, FaInstagram, FaTwitterSquare, FaGithub, FaYoutube } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -281,8 +282,18 @@ export default (() => {
 							font="normal 600 16px/1.5 --fontFamily-sans"
 						>
 							Professional mixing and mastering.
-							<Span font-weight="normal">
-								{" "}We also do mixing and mastering for a small fee of $15, signed to this label or not. We require your vocals in .wav files and the instrumental in .mp3 or .wav.{" \n "}
+							<Span
+								font-weight="normal"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								user-select="auto"
+								pointer-events="auto"
+							>
+								{" "}We also do mixing and mastering for a small fee of $15, signed to this label or not. We require your vocals in .wav format and the instrumental in .mp3 or .wav.{" \n "}
 							</Span>
 						</Span>
 					</Text>
@@ -314,6 +325,9 @@ KKBOX, Kuaishou, Mixcloud, Napster, NetEase Cloud Music, Nuuday, Pandora, RX Mus
 		<Section background="--color-dark" color="--dark" padding="64px 0 64px 0">
 			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap" border-color="#ffffff">
 				<Box padding="16px 16px 16px 16px" width="50%" lg-width="100%">
+					<Link href="#" color="#000000">
+						Some text
+					</Link>
 					<Box>
 						<Text
 							font="--base"
@@ -334,6 +348,7 @@ KKBOX, Kuaishou, Mixcloud, Napster, NetEase Cloud Music, Nuuday, Pandora, RX Mus
 							Send demos and contact us here!
 						</Text>
 					</Box>
+					<Text margin="0px 0px 0px 0px" color="#ffffff" />
 				</Box>
 				<Box width="50%" padding="8px 8px 8px 8px" lg-width="100%">
 					<Box>
@@ -375,7 +390,76 @@ KKBOX, Kuaishou, Mixcloud, Napster, NetEase Cloud Music, Nuuday, Pandora, RX Mus
 				</Box>
 			</Box>
 		</Section>
-		<Components.FooterUniversal />
+		<Components.QuarklycommunityKitNetlifyForm />
+		<Section padding="50px 0 50px 0" quarkly-title="Footer-2" background="#000000">
+			<Box display="flex" justify-content="space-between" sm-flex-direction="column">
+				<Text
+					margin="0px 0px 0px 0px"
+					font="--base"
+					color="#ffffff"
+					sm-margin="0px 0px 15px 0px"
+					sm-text-align="center"
+				>
+					© 2025 Prism Audio. All rights reserved.
+					<br />
+					Site design done by minty's experiment lab (https://ebb.l5.ca/mintylab)
+				</Text>
+				<Box display="grid" grid-template-columns="repeat(5, 1fr)" grid-gap="16px 24px" sm-align-self="center">
+					<LinkBox href="/">
+						<Icon
+							category="fa"
+							icon={FaFacebook}
+							size="24px"
+							color="--primary"
+							hover-color="--dark"
+							transition="background-color 1s ease 0s"
+						/>
+					</LinkBox>
+					<LinkBox href="/">
+						<Icon
+							category="fa"
+							icon={FaInstagram}
+							size="24px"
+							color="--primary"
+							hover-color="--dark"
+							transition="background-color 1s ease 0s"
+						/>
+					</LinkBox>
+					<LinkBox href="/">
+						<Icon
+							category="fa"
+							icon={FaTwitterSquare}
+							size="24px"
+							color="--primary"
+							hover-color="--dark"
+							transition="background-color 1s ease 0s"
+						/>
+					</LinkBox>
+					<LinkBox href="/">
+						<Icon
+							category="fa"
+							icon={FaGithub}
+							size="24px"
+							color="--primary"
+							hover-color="--dark"
+							transition="background-color 1s ease 0s"
+						/>
+					</LinkBox>
+					<LinkBox href="/">
+						<Icon
+							category="fa"
+							icon={FaYoutube}
+							size="24px"
+							color="--primary"
+							hover-color="--dark"
+							transition="background-color 1s ease 0s"
+						/>
+					</LinkBox>
+				</Box>
+			</Box>
+		</Section>
+		<Components.QuarklycommunityKitNetlifyForm />
+		<Components.QuarklycommunityKitNetlifyForm />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
