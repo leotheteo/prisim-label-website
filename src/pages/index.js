@@ -85,29 +85,7 @@ export default (() => {
 					>
 						Prism Audio is a multi-genre distributor that focuses on reliable and fast distribution for all artists
 						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
-						<br />
+
 					</Text>
 				</Box>
 			</Box>
@@ -300,28 +278,91 @@ export default (() => {
 				</Box>
 			</List>
 		</Section>
-		<Section padding="80px 0 80px 0" quarkly-title="Content-5" background="#000000">
-			<Override slot="SectionContent" padding="0px 150px 0px 0px" lg-padding="0px 0 0px 0px" />
-			<Text margin="0px 0px 10px 0px" font="normal 400 18px/1.5 --fontFamily-sans" color="--primary" max-width="640px">
-				Our distribution networks
-			</Text>
-			<Text margin="0px 0px 30px 0px" font="normal 600 42px/1.2 --fontFamily-sans" max-width="640px" color="#ffffff">
-				Where do we distribute to?
-			</Text>
-			<Text margin="0px 0px 25px 0px" font="normal 300 25px/1.5 --fontFamily-sans" color="#ffffff" max-width="640px">
-				Prism Audio distributes to over 70+ DSP's (Digital Service Providers) Our providers can be seen below!
-			</Text>
-			<Text margin="0px 0px 25px 0px" font="normal 300 18px/1.5 --fontFamily-sans" color="#ffffff" max-width="640px">
-				Note: all Content Recognition services require exclusive rights to the instrumental
+		import React from 'react';
+import theme from 'theme';
+import { Theme, Link, Text, Box, Section, Icon } from '@quarkly/widgets';
+import { Helmet } from 'react-helmet';
+import { GlobalQuarklyPageStyles } from 'global-page-styles';
+import { RawHtml, Override, Formspree } from '@quarkly/components';
+import * as Components from 'components';
+import { FiMusic, FiEdit } from 'react-icons/fi';
+import { FaFacebook, FaInstagram, FaTwitterSquare, FaGithub, FaYoutube } from 'react-icons/fa';
 
-7digital (all platforms including: Barry’s, Canva, Deedo, Electric Jukebox, GrandPad, NEC, Onkyo, Dial by i.am+, eMusic, Global Eagle, The Firstclub, Global Radio, Mood Media, Mus.uy, Panasonic, Pinterest, Playlist for Life, Playster, PEEX, Snapchat, Soundtrack Your Brand, TDC, and Weyv), ACRCloud, Amazon Music, AMI Entertainment, Anghami, Apple Music (iTunes, Shazam), Audible Magic – Fulfillment360, Audible Magic – Rights360, Facebook and Instagram, JioSaavn, JOOX
+const dsps = [
+    '7digital (all platforms including: Barry’s, Canva, Deedo, Electric Jukebox, GrandPad, NEC, Onkyo, Dial by i.am+, eMusic, Global Eagle, The Firstclub, Global Radio, Mood Media, Mus.uy, Panasonic, Pinterest, Playlist for Life, Playster, PEEX, Snapchat, Soundtrack Your Brand, TDC, and Weyv)',
+    'ACRCloud',
+    'Amazon Music',
+    'AMI Entertainment',
+    'Anghami',
+    'Apple Music (iTunes, Shazam)',
+    'Audible Magic – Fulfillment360',
+    'Audible Magic – Rights360',
+    'Facebook and Instagram',
+    'JioSaavn',
+    'JOOX',
+    'KKBOX',
+    'Kuaishou',
+    'Mixcloud',
+    'Napster',
+    'NetEase Cloud Music',
+    'Nuuday',
+    'Pandora',
+    'RX Music',
+    'Slacker',
+    'Snap (7digital)',
+    'SoundCloud',
+    'Spotify',
+    'Styngr',
+    'TIDAL',
+    'TikTok',
+    'Trebel',
+    'VL Group',
+    'YouTube Content ID',
+    'YouTube Music',
+];
 
-KKBOX, Kuaishou, Mixcloud, Napster, NetEase Cloud Music, Nuuday, Pandora, RX Music, Slacker,  Snap (7digital),  SoundCloud,  Spotify,  Styngr, TIDAL, TikTok, Trebel,  VL Group, YouTube Content ID, YouTube Music.
-				<br />
-				<br />
-				Many more not listed here. Contact us below for the full list.
-			</Text>
-		</Section>
+export default (() => {
+    return (
+        <Theme theme={theme}>
+            <GlobalQuarklyPageStyles pageUrl={"index"} />
+            <Helmet>
+                <title>Quarkly export</title>
+                <meta name={"description"} content={"Web site created using quarkly.io"} />
+                <link rel={"shortcut icon"} href={"https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"} type={"image/x-icon"} />
+                <link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"} />
+                <link rel={"apple-touch-icon"} sizes={"76x76"} href={"https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"} />
+                <link rel={"apple-touch-icon"} sizes={"152x152"} href={"https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"} />
+                <link rel={"apple-touch-startup-image"} href={"https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"} />
+                <meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"} />
+                <meta name={"msapplication-TileColor"} content={"#272782"} />
+            </Helmet>
+            <Section padding="80px 0 80px 0" quarkly-title="Content-5" background="#000000">
+                <Override slot="SectionContent" padding="0px 150px 0px 0px" lg-padding="0px 0 0px 0px" />
+                <Text margin="0px 0px 10px 0px" font="normal 400 18px/1.5 --fontFamily-sans" color="--primary" max-width="640px">
+                    Our distribution networks
+                </Text>
+                <Text margin="0px 0px 30px 0px" font="normal 600 42px/1.2 --fontFamily-sans" max-width="640px" color="#ffffff">
+                    Where do we distribute to?
+                </Text>
+                <Text margin="0px 0px 25px 0px" font="normal 300 25px/1.5 --fontFamily-sans" color="#ffffff" max-width="640px">
+                    Prism Audio distributes to over 70+ DSPs (Digital Service Providers). Our providers can be seen below!
+                </Text>
+                <Box as="ul" list-style-type="none" padding="0" margin="0" color="#ffffff">
+                    {dsps.map((dsp, index) => (
+                        <Box as="li" key={index} margin="10px 0">
+                            {dsp}
+                        </Box>
+                    ))}
+                </Box>
+                <Text margin="0px 0px 25px 0px" font="normal 300 18px/1.5 --fontFamily-sans" color="#ffffff" max-width="640px">
+                    Note: all Content Recognition services require exclusive rights to the instrumental.
+                </Text>
+            </Section>
+            {/* Other sections and components */}
+        </Theme>
+    );
+});
+
 		<Section background="--color-dark" color="--dark" padding="64px 0 64px 0">
 			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap" border-color="#ffffff">
 				<Box padding="16px 16px 16px 16px" width="50%" lg-width="100%">
