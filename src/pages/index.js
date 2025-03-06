@@ -1,12 +1,12 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Section, Strong, Icon, Span, List, Input, Button, LinkBox } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Section, Strong, List, Icon, Span, Input, Button, LinkBox } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, Formspree } from "@quarkly/components";
 import * as Components from "components";
-import { FiMusic, FiEdit } from "react-icons/fi";
-import { FaFacebook, FaInstagram, FaTwitterSquare, FaGithub, FaYoutube } from "react-icons/fa";
+import { FaBarcode, FaFacebook, FaInstagram, FaTwitterSquare, FaGithub, FaYoutube } from "react-icons/fa";
+import { FiLock, FiMusic, FiEdit } from "react-icons/fi";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -217,6 +217,106 @@ export default (() => {
 					{" "}We provide multiple services for our artists so they can flourish. Here's what we offer.
 				</Text>
 			</Box>
+			<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" list-style-type="disc" as="ul" />
+			<List
+				margin="40px 0px 0px 0px"
+				padding="0px 0px 0px 0px"
+				as="ul"
+				sm-margin="24px 0 0 0"
+				list-style-type="none"
+				font="normal normal 18px/150% sans-serif"
+				display="grid"
+				flex-direction="column"
+				grid-gap="24px 32px"
+				lg-margin="32px 0px 0px 0px"
+				grid-template-columns="repeat(2, 1fr)"
+				sm-grid-template-columns="1fr"
+			>
+				<Box margin="0px 0px 0px 0px" display="flex" grid-gap="16px">
+					<Icon
+						display="block"
+						category="fa"
+						icon={FaBarcode}
+						size="20px"
+						color="--primary"
+						margin="5px 0 0 0"
+					/>
+					<Text padding="0" margin="0" color="--light">
+						<Span
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+							font="normal 600 16px/1.5 --fontFamily-sans"
+						>
+							<Span
+								font-weight="normal"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								user-select="auto"
+								pointer-events="auto"
+							>
+								<Span
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+									user-select="auto"
+									pointer-events="auto"
+								>
+									Codes. We provide free UPC and ISRC codes by default, but you're welcome to provide your own or to use one from a previous distributor or label
+								</Span>
+							</Span>
+						</Span>
+					</Text>
+				</Box>
+				<Box margin="0px 0px 0px 0px" display="flex" grid-gap="16px">
+					<Icon
+						display="block"
+						category="fi"
+						icon={FiLock}
+						size="20px"
+						color="--primary"
+						margin="5px 0 0 0"
+					/>
+					<Text padding="0" margin="0" font="18px/27px --fontFamily-sans" color="--light">
+						<Span
+							font-size="16px"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+						>
+							<Span
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								user-select="auto"
+								pointer-events="auto"
+							>
+								We also provide a way to lock your music and prevent reuploads. Just tell us when uploading!
+							</Span>
+						</Span>
+					</Text>
+				</Box>
+			</List>
 			<List
 				margin="40px 0px 0px 0px"
 				padding="0px 0px 0px 0px"
@@ -253,8 +353,18 @@ export default (() => {
 							font="normal 600 16px/1.5 --fontFamily-sans"
 						>
 							Quick distribution.{" "}
-							<Span font-weight="normal">
-								We offer quick distribution to all DSPs for free if you're accepted (~7 days from submission)
+							<Span
+								font-weight="normal"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								user-select="auto"
+								pointer-events="auto"
+							>
+								We offer quick distribution to all DSPs for free if you're accepted (~7 days from submission, can sometimes take longer)
 							</Span>
 						</Span>
 					</Text>
@@ -312,15 +422,36 @@ export default (() => {
 				Prism Audio distributes to over 70+ DSP's (Digital Service Providers) Our providers can be seen below!
 			</Text>
 			<Text margin="0px 0px 25px 0px" font="normal 300 18px/1.5 --fontFamily-sans" color="#ffffff" max-width="640px">
-				<Strong>
+				<Strong
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					user-select="auto"
+					pointer-events="auto"
+				>
 					Note: all Content Recognition services require exclusive rights to the instrumenta
 					<br />
 					<br />
 					l
 				</Strong>
-				{"\n\n"}7digital (all platforms including: Barry’s, Canva, Deedo, Electric Jukebox, GrandPad, NEC, Onkyo, Dial by i.am+, eMusic, Global Eagle, The Firstclub, Global Radio, Mood Media, Mus.uy, Panasonic, Pinterest, Playlist for Life, Playster, PEEX, Snapchat, Soundtrack Your Brand, TDC, and Weyv), ACRCloud, Amazon Music, AMI Entertainment, Anghami, Apple Music (iTunes, Shazam), Audible Magic – Fulfillment360, Audible Magic – Rights360, Facebook and Instagram, JioSaavn, JOOX
+				7digital (all platforms including: Barry’s, Canva, Deedo, Electric Jukebox, GrandPad, NEC, Onkyo, Dial by i.am+, eMusic, Global Eagle, The Firstclub, Global Radio, Mood Media, Mus.uy, Panasonic, Pinterest, Playlist for Life, Playster, PEEX, Snapchat, Soundtrack Your Brand, TDC, and Weyv), ACRCloud, Amazon Music, AMI Entertainment, Anghami, Apple Music (iTunes, Shazam), Audible Magic –{" "}
+				<Strong>
+					Fulfillment360
+				</Strong>
+				,{" "}
+				<Strong>
+					Audible Magic – Rights360
+				</Strong>
+				, Facebook and Instagram, JioSaavn, JOOX
 
-KKBOX, Kuaishou, Mixcloud, Napster, NetEase Cloud Music, Nuuday, Pandora, RX Music, Slacker,  Snap (7digital),  SoundCloud,  Spotify,  Styngr, TIDAL, TikTok, Trebel,  VL Group, YouTube Content ID, YouTube Music.
+KKBOX, Kuaishou, Mixcloud, Napster, NetEase Cloud Music, Nuuday, Pandora, RX Music, Slacker,  Snap (7digital),  SoundCloud,  Spotify,  Styngr, TIDAL, TikTok, Trebel,  VL Group,{" "}
+				<Strong>
+					YouTube Content ID
+				</Strong>
+				, YouTube Music.
 				<br />
 				<br />
 				Many more not listed here. Contact us below for the full list.
@@ -410,6 +541,9 @@ KKBOX, Kuaishou, Mixcloud, Napster, NetEase Cloud Music, Nuuday, Pandora, RX Mus
 					<br />
 					<br />
 					(shoutout budgiemint for telling me abt quarkly which this site was made with)
+					<br />
+					<br />
+					Owned and Operated by v1x0 (linktr.ee/v1x0music)
 				</Text>
 				<Box display="grid" grid-template-columns="repeat(5, 1fr)" grid-gap="16px 24px" sm-align-self="center">
 					<LinkBox href="/">
