@@ -15,10 +15,10 @@
     <img src="https://badgen.net/badge/Gatsby/2.23.12/purple" alt="Gatsby version" />
   </a>
   
-   <a href="https://github.com/xxbloodcor3xx/prisim-label-website/pulls">
-     <img src="https://badgen.net/github/prs/xxbloodcor3xx/prisim-label-website" alt="Pull Request Amount">
+   <a href="https://github.com/leotheteo/prisim-label-website/pulls">
+     <img src="https://badgen.net/github/prs/leotheteo/prisim-label-website" alt="Pull Request Amount">
    </a>
-   <img src="https://badgen.net/github/last-commit/xxbloodcor3xx/prisim-label-website" alt="Last commit date" />
+   <img src="https://badgen.net/github/last-commit/leotheteo/prisim-label-website" alt="Last commit date" />
     
   <a href="./LICENSE">
     <img src="https://badgen.net/badge/license/MIT/blue" alt="License">
