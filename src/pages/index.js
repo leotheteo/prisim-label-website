@@ -1,9 +1,11 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Text, LinkBox, Box, Button, Structure, Section, Strong, Input } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Section, Strong, Icon, Span, List, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, Formspree } from "@quarkly/components";
+import * as Components from "components";
+import { FiMusic, FiEdit } from "react-icons/fi";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -20,332 +22,294 @@ export default (() => {
 			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"} />
 			<meta name={"msapplication-TileColor"} content={"#272782"} />
 		</Helmet>
-		<Section sm-padding="8px 0 8px 0" quarkly-title="Header-2">
+		<Section padding="88px 0 88px 0" background="radial-gradient(50% 50% at 52.09% 50%,rgba(0, 0, 0, 0.3) 67.1%,rgba(0, 0, 0, 0.4) 100%),url(https://images.unsplash.com/photo-1570398584138-59a560dc1288?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) center center/cover repeat scroll padding-box" quarkly-title="Hero-25">
 			<Override
 				slot="SectionContent"
+				lg-justify-content="center"
+				max-width="1220px"
+				flex-direction="row"
+				flex-wrap="wrap"
+			/>
+			<Box
+				lg-margin="0px 0px 40px 0px"
+				width="70%"
+				display="flex"
+				align-items="flex-start"
 				flex-direction="column"
 				justify-content="space-between"
-				align-items="center"
-				lg-flex-direction="row"
-			/>
-			<Structure>
-				<Override slot="Content">
-					<Override slot="cell-0">
-						<Box
-							display="flex"
-							padding="12px 0 18px 0"
-							justify-content="center"
-							align-items="flex-start"
-							flex-direction="row"
-							sm-width="50%"
-							sm-align-items="center"
-							sm-flex-direction="row"
-							sm-justify-content="flex-start"
-							md-width="50%"
-							lg-width="70%"
-							md-justify-content="flex-start"
-							lg-justify-content="flex-start"
-						>
-							<Image
-								src="https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"
-								display="block"
-								width="32px"
-								height="32px"
-								sm-width="64px"
-								sm-height="64px"
-								srcSet="https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=3200 3200w"
-								sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
-							/>
-							<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="18px">
-								<Text
-									margin="0"
-									md-margin="0px 0 0px 0"
-									text-align="left"
-									font="--headline3"
-									sm-margin="0px 0 0px 0"
-									display="block"
-									sm-text-align="center"
-								>
-									Prism Audio{" "}
-								</Text>
-							</LinkBox>
-						</Box>
-						<Button
-							width="auto"
-							height="auto"
-							sm-type="link"
-							sm-href="https://docs.google.com/forms/d/e/1FAIpQLSeqxt2vzCF_F90cRN2j9tRbuOfIq2Eu6n1BJurDvkgJGNqxbg/viewform?usp=header"
-							sm-height="fit-content"
-							sm-width="fit-content"
-						>
-							Apply
-						</Button>
-					</Override>
-					<Override slot="cell-1" />
-					<Override slot="Cell 0th" width="fit-content" />
-				</Override>
-			</Structure>
+				lg-width="100%"
+			>
+				<Box
+					width="80%"
+					flex-direction="column"
+					align-items="flex-start"
+					lg-width="100%"
+					lg-align-items="center"
+					sm-margin="0px 0px 40px 0px"
+					sm-padding="0px 0px 0px 0px"
+					display="flex"
+					justify-content="center"
+					lg-margin="0px 0px 40px 0px"
+					md-align-items="flex-start"
+				>
+					<Text
+						margin="0px 0px 16px 0px"
+						color="--lightD2"
+						font="--base"
+						lg-text-align="center"
+						letter-spacing="1px"
+						text-transform="uppercase"
+					>
+						Sound in Every Spectrum
+					</Text>
+					<Text
+						margin="0px 0px 36px 0px"
+						color="--light"
+						font="--headline1"
+						lg-text-align="center"
+						sm-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
+						md-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
+					>
+						Prism Audio
+					</Text>
+					<Text
+						lg-text-align="center"
+						lg-width="80%"
+						width="70%"
+						sm-width="100%"
+						margin="0px 0px 0px 0px"
+						color="--lightD2"
+						font="--lead"
+						md-text-align="left"
+					>
+						Prism Audio is a multi-genre distributor that focuses on reliable and fast distribution for all artists
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+					</Text>
+				</Box>
+			</Box>
 		</Section>
 		<Section
-			padding="60px 0 60px 0"
-			sm-padding="40px 0 40px 0"
-			background="--color-dark"
+			text-align="center"
+			background-color="--primary"
+			color="--light"
+			padding="80px 0"
+			sm-padding="40px 0"
+			background="#000000"
+		>
+			<Text
+				as="h5"
+				font="--lead"
+				margin="10px 0 0 0"
+				text-transform="uppercase"
+				letter-spacing="5px"
+			>
+				What does prism audio do?
+			</Text>
+			<Text as="h1" font="--headline1" md-font="--headline2" margin="10px 0 0 0">
+				About Prism Audio
+			</Text>
+			<Text as="p" font="--lead" margin="40px 0 20px 0">
+				We're a multi-genre label/distributor that takes pride in promoting our diverse artists and ensuring their music reaches audiences quickly and efficiently through various Digital Service Providers (DSPs). Our expertise spans multiple music styles, allowing us to cater to a wide range of tastes and preferences. We accept any artist as long as they have a minimum of one release per month. Any artist from any genre works! If you're a part of a collective, that is perfectly fine! Being signed to any PRO's is okay as well, as long as you provide your IPI number.
+			</Text>
+		</Section>
+		<Section
+			padding="60px 0 90px 0"
+			sm-padding="60px 0 60px 0"
+			min-height="600px"
+			sm-min-height="auto"
 			display="flex"
-			flex-direction="column"
+			background="#000000"
+			quarkly-title="Advantages/Features-6"
 		>
 			<Override
 				slot="SectionContent"
-				flex-wrap="wrap"
 				flex-direction="row"
-				width="auto"
-				height="auto"
-				display="inline"
+				flex-wrap="wrap"
+				grid-gap="5%"
+				sm-min-width="280px"
 			/>
-			<Section>
-				<Section width="fit-content" height="fit-content" display="block" />
-				<Section />
-			</Section>
-			<Text
-				margin="0px"
-				font="--headline1"
-				md-font="--headline2"
-				color="--lightD2"
-				width="auto"
-				padding="0px 32px 0px 0px"
-				display="block"
-				height="auto"
-				letter-spacing="inherit"
-				text-align="center"
+			<Box
+				display="flex"
+				width="100%"
+				flex-direction="column"
+				justify-content="flex-start"
+				align-items="flex-start"
+				lg-width="100%"
+				lg-align-items="flex-start"
+				lg-margin="0px 0px 60px 0px"
+				sm-margin="0px 0px 40px 0px"
+				sm-padding="0px 0px 0px 0px"
+				padding="0px 0px 0px 0px"
+				lg-flex-direction="row"
+				lg-flex-wrap="wrap"
+				sm-width="100%"
+				md-margin="0px 0px 30px 0px"
+				margin="0px 0px 48px 0px"
+				lg-justify-content="center"
 			>
-				Who are we?
-			</Text>
-			<Text
-				margin="0px"
-				font="--base"
-				color="--grey"
-				width="auto"
-				padding="0px 32px 0px 0px"
-				height="auto"
+				<Text as="p" font="--base" color="--primary" margin="0px 0px 8px 0px">
+					<Strong
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+						user-select="auto"
+						pointer-events="auto"
+					>
+						What do we provide?
+					</Strong>
+				</Text>
+				<Text
+					as="h1"
+					margin="0px"
+					font="--headline2"
+					color="--light"
+					width="100%"
+					md-width="100%"
+					md-margin="0px 0px 32px 0px"
+					md-padding="0px 0px 0px 0px"
+					sm-font="normal 600 40px/1.2 --fontFamily-sans"
+					lg-text-align="center"
+				>
+					Services at Prism Audio
+				</Text>
+				<Text
+					as="p"
+					margin="20px 0 0 0"
+					font="--lead"
+					font-size="20px"
+					font-weight="300"
+					color="--light"
+					width="50%"
+					md-width="100%"
+					md-margin="0px 0px 0px 0px"
+					md-padding="0px 0px 0px 0px"
+					sm-font="--base"
+					lg-text-align="center"
+					lg-width="100%"
+				>
+					{" "}We provide multiple services for our artists so they can flourish. Here's what we offer.
+				</Text>
+			</Box>
+			<List
+				margin="40px 0px 0px 0px"
+				padding="0px 0px 0px 0px"
+				as="ul"
+				sm-margin="24px 0 0 0"
+				list-style-type="none"
+				font="normal normal 18px/150% sans-serif"
 				display="grid"
-				text-align="center"
+				flex-direction="column"
+				grid-gap="24px 32px"
+				lg-margin="32px 0px 0px 0px"
+				grid-template-columns="repeat(2, 1fr)"
+				sm-grid-template-columns="1fr"
 			>
-				We're a multi-genre label that takes pride in promoting our diverse artists and ensuring their music reaches audiences quickly and efficiently through various Digital Service Providers (DSPs). Our expertise spans multiple music styles, allowing us to cater to a wide range of tastes and preferences.{"\n\n"}
-			</Text>
-			<Text
-				margin="0px"
-				font="--base"
-				color="--grey"
-				width="auto"
-				padding="0px 32px 0px 0px"
-				height="auto"
-				display="inline-block"
-			>
-				<br />
-				<br />
-				<br />
-				<Strong
-					overflow-wrap="normal"
-					word-break="normal"
-					white-space="normal"
-					text-indent="0"
-					text-overflow="clip"
-					hyphens="manual"
-					user-select="auto"
-					pointer-events="auto"
-				>
-					<br />
-				</Strong>
-			</Text>
-			<Text
-				margin="0px"
-				font="--base"
-				color="--grey"
-				width="auto"
-				padding="0px 32px 0px 0px"
-				height="auto"
-				display="inline-block"
-				text-align="center"
-			>
-				We accept any artist as long as they have a minimum of one release per month. Any artist from any genre works! If you're a part of a collective, that is perfectly fine! Being signed to any PRO's is okay as well, as long as you provide your IPI number.
-			</Text>
+				<Box margin="0px 0px 0px 0px" display="flex" grid-gap="16px">
+					<Icon
+						display="block"
+						category="fi"
+						icon={FiMusic}
+						size="20px"
+						color="--primary"
+						margin="5px 0 0 0"
+					/>
+					<Text padding="0" margin="0" color="--light">
+						<Span
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+							font="normal 600 16px/1.5 --fontFamily-sans"
+						>
+							Quick distribution.{" "}
+							<Span font-weight="normal">
+								We offer quick distribution to all DSPs for free if you're accepted (~7 days from submission)
+							</Span>
+						</Span>
+					</Text>
+				</Box>
+				<Box margin="0px 0px 0px 0px" display="flex" grid-gap="16px">
+					<Icon
+						display="block"
+						category="fi"
+						icon={FiEdit}
+						size="20px"
+						color="--primary"
+						margin="5px 0 0 0"
+					/>
+					<Text padding="0" margin="0" font="18px/27px --fontFamily-sans" color="--light">
+						<Span
+							font-weight="600"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+							font="normal 600 16px/1.5 --fontFamily-sans"
+						>
+							Professional mixing and mastering.
+							<Span font-weight="normal">
+								{" "}We also do mixing and mastering for a small fee of $15, signed to this label or not. We require your vocals in .wav files and the instrumental in .mp3 or .wav.{" \n "}
+							</Span>
+						</Span>
+					</Text>
+				</Box>
+			</List>
 		</Section>
-		<Section padding="80px 0 80px 0" sm-padding="60px 0 60px 0" background="--color-dark">
-			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" />
-			<Box
-				width="50%"
-				display="flex"
-				flex-direction="column"
-				justify-content="space-between"
-				md-width="100%"
-				padding="0px 80px 0px 0px"
-				lg-padding="0px 30px 0px 0px"
-				md-padding="0px 0px 0px 0px"
-			>
-				<Text margin="0px 0px 0px 0px" color="--orange" font="--lead" md-margin="0px 0px 20px 0px" />
-				<Text
-					margin="0px 0px 0px 0px"
-					color="--light"
-					font="--headline2"
-					md-margin="0px 0px 30px 0px"
-					sm-text-align="center"
-				>
-					Services
-				</Text>
-			</Box>
-			<Box
-				width="50%"
-				display="flex"
-				flex-direction="column"
-				justify-content="space-between"
-				md-width="100%"
-				border-width="auto"
-				border-style="auto"
-			>
-				<Text margin="0px 0px 40px 0px" color="--light" font="--base">
-					We offer quick distribution to all DSPs for free if you're accepted (~7 days from submission)
-				</Text>
-				<Text margin="0px 0px 0px 0px" color="--light" font="--base">
-					We also do mixing and mastering for a small fee of $15, signed to this label or not. We require your vocals in .wav files and the instrumental in .mp3 or .wav.{" "}
-				</Text>
-			</Box>
-		</Section>
-		<Section padding="80px 0 80px 0" sm-padding="60px 0 60px 0" background="--color-dark">
-			<Override slot="SectionContent" flex-direction="row" md-flex-wrap="wrap" />
-			<Box
-				width="auto"
-				display="flex"
-				flex-direction="column"
-				justify-content="space-between"
-				md-width="100%"
-				padding="0px 80px 0px 0px"
-				lg-padding="0px 30px 0px 0px"
-				md-padding="0px 0px 0px 0px"
-				height="auto"
-			>
-				<Text
-					margin="0px 0px 0px 0px"
-					color="--light"
-					font="--headline2"
-					md-margin="0px 0px 30px 0px"
-					sm-text-align="center"
-				>
-					Who do we distribute to?
-				</Text>
-			</Box>
-			<Box
-				width="50%"
-				display="flex"
-				flex-direction="column"
-				justify-content="space-between"
-				md-width="100%"
-			>
-				<Text
-					margin="0px 0px 0px 0px"
-					color="#F7FBFF"
-					font="--base"
-					width="auto"
-					height="auto"
-					text-align="center"
-				>
-					Note: all Content Recognition services require exclusive rights to the instrumental
-					<br />
-					<br />
-					7digital (all platforms including: Barry’s, Canva, Deedo, Electric Jukebox, GrandPad, NEC, Onkyo, Dial by i.am+, eMusic, Global Eagle, The Firstclub, Global Radio, Mood Media, Mus.uy, Panasonic, Pinterest, Playlist for Life, Playster, PEEX, Snapchat, Soundtrack Your Brand, TDC, and Weyv)
-					<br />
-					<br />
-					ACRCloud
-					<br />
-					<br />
-					Amazon Music
-					<br />
-					<br />
-					AMI Entertainment
-					<br />
-					<br />
-					Anghami
-					<br />
-					<br />
-					Apple Music (iTunes, Shazam){" "}
-					<br />
-					<br />
-					Audible Magic – Fulfillment360
-					<br />
-					<br />
-					Audible Magic – Rights360
-					<br />
-					<br />
-					Facebook and Instagram
-					<br />
-					<br />
-					aioSaavn
-					<br />
-					<br />
-					JOOX
-					<br />
-					<br />
-					KKBOX
-					<br />
-					<br />
-					Kuaishou
-					<br />
-					<br />
-					Mixcloud
-					<br />
-					<br />
-					Napster
-					<br />
-					<br />
-					NetEase Cloud Music
-					<br />
-					<br />
-					Nuuday
-					<br />
-					<br />
-					Pandora
-					<br />
-					<br />
-					RX Music
-					<br />
-					<br />
-					Shazam (Apple)
-					<br />
-					<br />
-					Slacker
-					<br />
-					<br />
-					Snap (7digital)
-					<br />
-					<br />
-					SoundCloud
-					<br />
-					<br />
-					Spotify
-					<br />
-					<br />
-					Styngr (Audible Magic – Fulfillment360)
-					<br />
-					<br />
-					TIDAL
-					<br />
-					<br />
-					TikTok
-					<br />
-					<br />
-					Trebel
-					<br />
-					<br />
-					VL Group
-					<br />
-					<br />
-					YouTube Content ID
-					<br />
-					<br />
-					YouTube Music
-					<br />
-					<br />
-					Many more more not listed here. Contact us for the full list.
-				</Text>
-			</Box>
+		<Section padding="80px 0 80px 0" quarkly-title="Content-5" background="#000000">
+			<Override slot="SectionContent" padding="0px 150px 0px 0px" lg-padding="0px 0 0px 0px" />
+			<Text margin="0px 0px 10px 0px" font="normal 400 18px/1.5 --fontFamily-sans" color="--primary" max-width="640px">
+				Our distribution networks
+			</Text>
+			<Text margin="0px 0px 30px 0px" font="normal 600 42px/1.2 --fontFamily-sans" max-width="640px" color="#ffffff">
+				Where do we distribute to?
+			</Text>
+			<Text margin="0px 0px 25px 0px" font="normal 300 25px/1.5 --fontFamily-sans" color="#ffffff" max-width="640px">
+				Prism Audio distributes to over 70+ DSP's (Digital Service Providers) Our providers can be seen below!
+			</Text>
+			<Text margin="0px 0px 25px 0px" font="normal 300 18px/1.5 --fontFamily-sans" color="#ffffff" max-width="640px">
+				Note: all Content Recognition services require exclusive rights to the instrumental
+
+7digital (all platforms including: Barry’s, Canva, Deedo, Electric Jukebox, GrandPad, NEC, Onkyo, Dial by i.am+, eMusic, Global Eagle, The Firstclub, Global Radio, Mood Media, Mus.uy, Panasonic, Pinterest, Playlist for Life, Playster, PEEX, Snapchat, Soundtrack Your Brand, TDC, and Weyv), ACRCloud, Amazon Music, AMI Entertainment, Anghami, Apple Music (iTunes, Shazam), Audible Magic – Fulfillment360, Audible Magic – Rights360, Facebook and Instagram, JioSaavn, JOOX
+
+KKBOX, Kuaishou, Mixcloud, Napster, NetEase Cloud Music, Nuuday, Pandora, RX Music, Slacker,  Snap (7digital),  SoundCloud,  Spotify,  Styngr, TIDAL, TikTok, Trebel,  VL Group, YouTube Content ID, YouTube Music.
+				<br />
+				<br />
+				Many more not listed here. Contact us below for the full list.
+			</Text>
 		</Section>
 		<Section background="--color-dark" color="--dark" padding="64px 0 64px 0">
 			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap" border-color="#ffffff">
@@ -373,7 +337,7 @@ export default (() => {
 				</Box>
 				<Box width="50%" padding="8px 8px 8px 8px" lg-width="100%">
 					<Box>
-						<Formspree endpoint="xeqpgrlv">
+						<Formspree endpoint="xeqpgrlv" completeText="Thanks! A member of the Prism Audio team will reach out shortly!" errorMessage="Your message was not sent. Please contact a Prism Audio team member through different means if the form is still broken">
 							<Box
 								gap="16px"
 								display="grid"
@@ -411,6 +375,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
+		<Components.FooterUniversal />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
