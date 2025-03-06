@@ -70,13 +70,20 @@ export default (() => {
 								</Text>
 							</LinkBox>
 						</Box>
+						<Button
+							width="auto"
+							height="auto"
+							sm-type="link"
+							sm-href="https://docs.google.com/forms/d/e/1FAIpQLSeqxt2vzCF_F90cRN2j9tRbuOfIq2Eu6n1BJurDvkgJGNqxbg/viewform?usp=header"
+							sm-height="fit-content"
+							sm-width="fit-content"
+						>
+							Apply
+						</Button>
 					</Override>
 					<Override slot="cell-1" />
 					<Override slot="Cell 0th" width="fit-content" />
 				</Override>
-				<Button width="auto" height="auto" sm-type="link" sm-href="https://docs.google.com/forms/d/e/1FAIpQLSeqxt2vzCF_F90cRN2j9tRbuOfIq2Eu6n1BJurDvkgJGNqxbg/viewform?usp=header">
-					Apply
-				</Button>
 			</Structure>
 		</Section>
 		<Section
