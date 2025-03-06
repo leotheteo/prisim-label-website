@@ -403,6 +403,9 @@ KKBOX, Kuaishou, Mixcloud, Napster, NetEase Cloud Music, Nuuday, Pandora, RX Mus
 					© 2025 Prism Audio. All rights reserved.
 					<br />
 					Site design done by minty's experiment lab (https://ebb.l5.ca/mintylab)
+					<br />
+					<br />
+					(shoutout budgiemint for telling me abt quarkly which this site was made with)
 				</Text>
 				<Box display="grid" grid-template-columns="repeat(5, 1fr)" grid-gap="16px 24px" sm-align-self="center">
 					<LinkBox href="/">
