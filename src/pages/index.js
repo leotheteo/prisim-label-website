@@ -28,55 +28,55 @@ export default (() => {
 				align-items="center"
 				lg-flex-direction="row"
 			/>
-			<Box
-				display="flex"
-				padding="12px 0 18px 0"
-				justify-content="center"
-				align-items="flex-start"
-				flex-direction="row"
-				width="100%"
-				sm-width="50%"
-				sm-align-items="center"
-				sm-flex-direction="row"
-				sm-justify-content="flex-start"
-				md-width="50%"
-				lg-width="70%"
-				md-justify-content="flex-start"
-				lg-justify-content="flex-start"
-			>
-				<Image
-					src="https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"
-					display="block"
-					width="32px"
-					height="32px"
-					sm-width="64px"
-					sm-height="64px"
-					srcSet="https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=3200 3200w"
-					sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
-				/>
-				<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="18px">
-					<Text
-						margin="0"
-						md-margin="0px 0 0px 0"
-						text-align="left"
-						font="--headline3"
-						sm-margin="0px 0 0px 0"
-						display="block"
-						sm-text-align="center"
-					>
-						Prism Audio{" "}
-					</Text>
-				</LinkBox>
-			</Box>
 			<Structure>
 				<Override slot="Content">
-					<Override slot="cell-0" />
-					<Override slot="cell-1">
-						<Button width="auto" height="auto" sm-type="link" sm-href="https://docs.google.com/forms/d/e/1FAIpQLSeqxt2vzCF_F90cRN2j9tRbuOfIq2Eu6n1BJurDvkgJGNqxbg/viewform?usp=header">
-							Apply
-						</Button>
+					<Override slot="cell-0">
+						<Box
+							display="flex"
+							padding="12px 0 18px 0"
+							justify-content="center"
+							align-items="flex-start"
+							flex-direction="row"
+							sm-width="50%"
+							sm-align-items="center"
+							sm-flex-direction="row"
+							sm-justify-content="flex-start"
+							md-width="50%"
+							lg-width="70%"
+							md-justify-content="flex-start"
+							lg-justify-content="flex-start"
+						>
+							<Image
+								src="https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"
+								display="block"
+								width="32px"
+								height="32px"
+								sm-width="64px"
+								sm-height="64px"
+								srcSet="https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17%3A34%3A40.476Z&quality=85&w=3200 3200w"
+								sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,100vw"
+							/>
+							<LinkBox flex-direction="row" href="/index" display="flex" grid-gap="18px">
+								<Text
+									margin="0"
+									md-margin="0px 0 0px 0"
+									text-align="left"
+									font="--headline3"
+									sm-margin="0px 0 0px 0"
+									display="block"
+									sm-text-align="center"
+								>
+									Prism Audio{" "}
+								</Text>
+							</LinkBox>
+						</Box>
 					</Override>
+					<Override slot="cell-1" />
+					<Override slot="Cell 0th" width="fit-content" />
 				</Override>
+				<Button width="auto" height="auto" sm-type="link" sm-href="https://docs.google.com/forms/d/e/1FAIpQLSeqxt2vzCF_F90cRN2j9tRbuOfIq2Eu6n1BJurDvkgJGNqxbg/viewform?usp=header">
+					Apply
+				</Button>
 			</Structure>
 		</Section>
 		<Section
