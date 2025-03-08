@@ -3,7 +3,7 @@ module.exports = {
         title: "Quarkly gatsby project",
         description: "",
         author: "@quarkly",
-        siteUrl: "https://prisim-audio.netlify.app"
+        siteUrl: "https://prismdistro.8bit.ca"
     },
     plugins: [
         "gatsby-plugin-react-helmet",
