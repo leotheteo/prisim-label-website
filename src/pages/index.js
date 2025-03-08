@@ -274,7 +274,10 @@ export default (() => {
 									user-select="auto"
 									pointer-events="auto"
 								>
-									Codes. We provide free UPC and ISRC codes by default, but you're welcome to provide your own or to use one from a previous distributor or label
+									<Strong>
+										Codes.
+									</Strong>
+									{" "}We provide free UPC and ISRC codes by default, but you're welcome to provide your own or to use one from a previous distributor or label
 								</Span>
 							</Span>
 						</Span>
@@ -311,7 +314,10 @@ export default (() => {
 								user-select="auto"
 								pointer-events="auto"
 							>
-								We also provide a way to lock your music and prevent reuploads. Just tell us when uploading!
+								<Strong>
+									Lock Music
+								</Strong>
+								. We also provide a way to lock your music and prevent reuploads. Just tell us when uploading!
 							</Span>
 						</Span>
 					</Text>
@@ -391,7 +397,9 @@ export default (() => {
 							pointer-events="auto"
 							font="normal 600 16px/1.5 --fontFamily-sans"
 						>
-							Professional mixing and mastering.
+							<Span font-weight="normal">
+								Professional mixing and mastering.
+							</Span>
 							<Span
 								font-weight="normal"
 								overflow-wrap="normal"
