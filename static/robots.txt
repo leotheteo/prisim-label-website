@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prismdistro.8bit.ca/sitemap-index.xml
+Sitemap: https://prismdistro.l5.ca/sitemap-index.xml

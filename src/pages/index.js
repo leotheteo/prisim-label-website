@@ -111,6 +111,7 @@ export default (() => {
 					</Text>
 				</Box>
 			</Box>
+			<Section />
 		</Section>
 		<Section
 			text-align="center"
@@ -397,8 +398,21 @@ export default (() => {
 							pointer-events="auto"
 							font="normal 600 16px/1.5 --fontFamily-sans"
 						>
-							<Span font-weight="normal">
-								Professional mixing and mastering.
+							<Span
+								font-weight="normal"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+								user-select="auto"
+								pointer-events="auto"
+							>
+								<Strong>
+									Professional mixing and mastering
+								</Strong>
+								.
 							</Span>
 							<Span
 								font-weight="normal"
