@@ -567,6 +567,9 @@ KKBOX, Kuaishou, Mixcloud, Napster, NetEase Cloud Music, Nuuday, Pandora, RX Mus
 					<br />
 					Owned and Operated by v1x0 (linktr.ee/v1x0music)
 				</Text>
+				<Button width="fit-content" height="fit-content">
+					For Clients
+				</Button>
 				<Box display="grid" grid-template-columns="repeat(5, 1fr)" grid-gap="16px 24px" sm-align-self="center">
 					<LinkBox href="/">
 						<Icon
