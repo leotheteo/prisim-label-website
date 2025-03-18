@@ -442,6 +442,7 @@ export default (() => {
 				md-font="--headline2"
 				margin="20px 0 0 0"
 				color="#ffffff"
+				text-align="center"
 			>
 				Where does Prism Audio Distribute?
 			</Text>
@@ -455,7 +456,7 @@ export default (() => {
 				Click bellow for the list!
 			</Text>
 			<Button font="--lead" margin="20px" type="link" href="https://prism-partners.netlify.app">
-				Button
+				Click here!
 			</Button>
 		</Section>
 		<Section background="--color-dark" color="--dark" padding="64px 0 64px 0">
