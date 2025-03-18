@@ -1,11 +1,11 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Section, Strong, List, Icon, Span, Input, Button, LinkBox } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Section, Strong, List, Icon, Span, Button, Input } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override, Formspree } from "@quarkly/components";
 import * as Components from "components";
-import { FaBarcode, FaFacebook, FaInstagram, FaTwitterSquare, FaGithub, FaYoutube } from "react-icons/fa";
+import { FaBarcode } from "react-icons/fa";
 import { FiLock, FiMusic, FiEdit } from "react-icons/fi";
 export default (() => {
 	return <Theme theme={theme}>
@@ -432,52 +432,31 @@ export default (() => {
 				</Box>
 			</List>
 		</Section>
-		<Section padding="80px 0 80px 0" quarkly-title="Content-5" background="#000000">
-			<Override slot="SectionContent" padding="0px 150px 0px 0px" lg-padding="0px 0 0px 0px" />
-			<Text margin="0px 0px 10px 0px" font="normal 400 18px/1.5 --fontFamily-sans" color="--primary" max-width="640px">
-				Our distribution networks
+		<Components.QuarklycommunityKitNetlifyForm />
+		<Components.QuarklycommunityKitNetlifyForm />
+		<Section padding="80px 0" sm-padding="40px 0" background="#000000">
+			<Override slot="SectionContent" align-items="center" />
+			<Text
+				as="h2"
+				font="--headline1"
+				md-font="--headline2"
+				margin="20px 0 0 0"
+				color="#ffffff"
+			>
+				Where does Prism Audio Distribute?
 			</Text>
-			<Text margin="0px 0px 30px 0px" font="normal 600 42px/1.2 --fontFamily-sans" max-width="640px" color="#ffffff">
-				Where do we distribute to?
+			<Text
+				as="p"
+				font="--lead"
+				margin="20px 0 20px 0"
+				text-align="center"
+				color="#ffffff"
+			>
+				Click bellow for the list!
 			</Text>
-			<Text margin="0px 0px 25px 0px" font="normal 300 25px/1.5 --fontFamily-sans" color="#ffffff" max-width="640px">
-				Prism Audio distributes to over 70+ DSP's (Digital Service Providers) Our providers can be seen below!
-			</Text>
-			<Text margin="0px 0px 25px 0px" font="normal 300 18px/1.5 --fontFamily-sans" color="#ffffff" max-width="640px">
-				<Strong
-					overflow-wrap="normal"
-					word-break="normal"
-					white-space="normal"
-					text-indent="0"
-					text-overflow="clip"
-					hyphens="manual"
-					user-select="auto"
-					pointer-events="auto"
-				>
-					Note: all Content Recognition services require exclusive rights to the instrumenta
-					<br />
-					<br />
-					l
-				</Strong>
-				7digital (all platforms including: Barry’s, Canva, Deedo, Electric Jukebox, GrandPad, NEC, Onkyo, Dial by i.am+, eMusic, Global Eagle, The Firstclub, Global Radio, Mood Media, Mus.uy, Panasonic, Pinterest, Playlist for Life, Playster, PEEX, Snapchat, Soundtrack Your Brand, TDC, and Weyv), ACRCloud, Amazon Music, AMI Entertainment, Anghami, Apple Music (iTunes, Shazam), Audible Magic –{" "}
-				<Strong>
-					Fulfillment360
-				</Strong>
-				,{" "}
-				<Strong>
-					Audible Magic – Rights360
-				</Strong>
-				, Facebook and Instagram, JioSaavn, JOOX
-
-KKBOX, Kuaishou, Mixcloud, Napster, NetEase Cloud Music, Nuuday, Pandora, RX Music, Slacker,  Snap (7digital),  SoundCloud,  Spotify,  Styngr, TIDAL, TikTok, Trebel,  VL Group,{" "}
-				<Strong>
-					YouTube Content ID
-				</Strong>
-				, YouTube Music.
-				<br />
-				<br />
-				Many more not listed here. Contact us below for the full list.
-			</Text>
+			<Button font="--lead" margin="20px" type="link" href="https://prism-partners.netlify.app">
+				Button
+			</Button>
 		</Section>
 		<Section background="--color-dark" color="--dark" padding="64px 0 64px 0">
 			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap" border-color="#ffffff">
@@ -548,84 +527,7 @@ KKBOX, Kuaishou, Mixcloud, Napster, NetEase Cloud Music, Nuuday, Pandora, RX Mus
 			</Box>
 		</Section>
 		<Components.QuarklycommunityKitNetlifyForm />
-		<Section padding="50px 0 50px 0" quarkly-title="Footer-2" background="#000000">
-			<Box display="flex" justify-content="space-between" sm-flex-direction="column">
-				<Text
-					margin="0px 0px 0px 0px"
-					font="--base"
-					color="#ffffff"
-					sm-margin="0px 0px 15px 0px"
-					sm-text-align="center"
-				>
-					© 2025 Prism Audio. All rights reserved.
-					<br />
-					Site design done by minty's experiment lab (https://ebb.l5.ca/mintylab)
-					<br />
-					<br />
-					(shoutout budgiemint for telling me abt quarkly which this site was made with)
-					<br />
-					<br />
-					Owned and Operated by v1x0 (linktr.ee/v1x0music)
-				</Text>
-				<Button width="fit-content" height="fit-content">
-					For Clients
-				</Button>
-				<Box display="grid" grid-template-columns="repeat(5, 1fr)" grid-gap="16px 24px" sm-align-self="center">
-					<LinkBox href="/">
-						<Icon
-							category="fa"
-							icon={FaFacebook}
-							size="24px"
-							color="--primary"
-							hover-color="--dark"
-							transition="background-color 1s ease 0s"
-						/>
-					</LinkBox>
-					<LinkBox href="/">
-						<Icon
-							category="fa"
-							icon={FaInstagram}
-							size="24px"
-							color="--primary"
-							hover-color="--dark"
-							transition="background-color 1s ease 0s"
-						/>
-					</LinkBox>
-					<LinkBox href="/">
-						<Icon
-							category="fa"
-							icon={FaTwitterSquare}
-							size="24px"
-							color="--primary"
-							hover-color="--dark"
-							transition="background-color 1s ease 0s"
-						/>
-					</LinkBox>
-					<LinkBox href="/">
-						<Icon
-							category="fa"
-							icon={FaGithub}
-							size="24px"
-							color="--primary"
-							hover-color="--dark"
-							transition="background-color 1s ease 0s"
-						/>
-					</LinkBox>
-					<LinkBox href="/">
-						<Icon
-							category="fa"
-							icon={FaYoutube}
-							size="24px"
-							color="--primary"
-							hover-color="--dark"
-							transition="background-color 1s ease 0s"
-						/>
-					</LinkBox>
-				</Box>
-			</Box>
-		</Section>
-		<Components.QuarklycommunityKitNetlifyForm />
-		<Components.QuarklycommunityKitNetlifyForm />
+		<Components.FooterUniversal />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
