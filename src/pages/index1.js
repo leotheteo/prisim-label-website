@@ -90,6 +90,7 @@ export default (() => {
 				</Link>
 			</Section>
 		</Section>
+		<Components.EmbedHTML />
 		<Components.QuarklycommunityKitNetlifyForm />
 		<Section padding="50px 0 50px 0" quarkly-title="Footer-2" background="#000000">
 			<Box display="flex" justify-content="space-between" sm-flex-direction="column">
