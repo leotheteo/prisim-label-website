@@ -90,7 +90,6 @@ export default (() => {
 				</Link>
 			</Section>
 		</Section>
-		<Components.EmbedHTML />
 		<Components.QuarklycommunityKitNetlifyForm />
 		<Section padding="50px 0 50px 0" quarkly-title="Footer-2" background="#000000">
 			<Box display="flex" justify-content="space-between" sm-flex-direction="column">
@@ -193,6 +192,9 @@ export default (() => {
 			<style place={"endOfHead"} rawKey={"67c737959335410018cacb82"}>
 				{":root {\n  box-sizing: border-box;\n}\n\n* {\n  box-sizing: inherit;\n}"}
 			</style>
+			<script place={"endOfHead"} rawKey={"67df6d2eaf493b2526755eb8"}>
+				{"<!-- Elfsight Form Builder | Untitled Form Builder -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-671e35c7-21c3-42d4-b5e2-c48ecb7a158c\" data-elfsight-app-lazy></div>"}
+			</script>
 		</RawHtml>
 	</Theme>;
 });

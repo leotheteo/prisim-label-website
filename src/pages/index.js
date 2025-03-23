@@ -468,6 +468,31 @@ export default (() => {
 				Click here!
 			</Button>
 		</Section>
+		<Section padding="80px 0" sm-padding="40px 0" background="#000000">
+			<Override slot="SectionContent" align-items="center" />
+			<Text
+				as="h2"
+				font="--headline1"
+				md-font="--headline2"
+				margin="20px 0 0 0"
+				color="#ffffff"
+				text-align="center"
+			>
+				Access our submission portal
+			</Text>
+			<Text
+				as="p"
+				font="--lead"
+				margin="20px 0 20px 0"
+				text-align="center"
+				color="#ffffff"
+			>
+				Click below to get access
+			</Text>
+			<Button font="--lead" margin="20px" type="link" href="https://prism-portal.netlify.app/">
+				Click here!
+			</Button>
+		</Section>
 		<Section background="--color-dark" color="--dark" padding="64px 0 64px 0">
 			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap" border-color="#ffffff">
 				<Box padding="16px 16px 16px 16px" width="50%" lg-width="100%">
@@ -564,6 +589,9 @@ export default (() => {
 			<style place={"endOfHead"} rawKey={"67c737959335410018cacb82"}>
 				{":root {\n  box-sizing: border-box;\n}\n\n* {\n  box-sizing: inherit;\n}"}
 			</style>
+			<script place={"endOfHead"} rawKey={"67df6d2eaf493b2526755eb8"}>
+				{"<!-- Elfsight Form Builder | Untitled Form Builder -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-671e35c7-21c3-42d4-b5e2-c48ecb7a158c\" data-elfsight-app-lazy></div>"}
+			</script>
 		</RawHtml>
 	</Theme>;
 });
