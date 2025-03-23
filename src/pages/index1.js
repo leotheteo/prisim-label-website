@@ -70,7 +70,7 @@ export default (() => {
 						sm-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
 						md-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
 					>
-						Welcome to the submitions portal!
+						Welcome to the submissions portal!
 					</Text>
 					<Text
 						lg-text-align="center"

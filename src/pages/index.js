@@ -409,7 +409,16 @@ export default (() => {
 								user-select="auto"
 								pointer-events="auto"
 							>
-								<Strong>
+								<Strong
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+									user-select="auto"
+									pointer-events="auto"
+								>
 									Professional mixing and mastering
 								</Strong>
 								.
@@ -425,7 +434,7 @@ export default (() => {
 								user-select="auto"
 								pointer-events="auto"
 							>
-								{" "}We also do mixing and mastering for a small fee of $15, signed to this label or not. We require your vocals in .wav format and the instrumental in .mp3 or .wav.{" \n "}
+								{" "}We also do mixing and mastering for a small fee of $15, (being on this distro gets you FREE mixing and mastering) We require your vocals in .wav format and the instrumental in .mp3 or .wav.{" \n "}
 							</Span>
 						</Span>
 					</Text>
