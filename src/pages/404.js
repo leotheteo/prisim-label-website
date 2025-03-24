@@ -74,7 +74,13 @@ export default (() => {
 				</LinkBox>
 			</Box>
 		</Section>
-		<Components.FooterUniversal />
+		<Components.FooterUniversal>
+			<Override slot="text">
+				© 2025 Xenon Studios.All rights reserved.
+				<br />
+				Site design done by minty's experiment lab (https://ebb.l5.ca/mintylab)
+			</Override>
+		</Components.FooterUniversal>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}

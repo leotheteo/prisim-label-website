@@ -23,7 +23,7 @@ export default (() => {
 			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"} />
 			<meta name={"msapplication-TileColor"} content={"#272782"} />
 		</Helmet>
-		<Section padding="88px 0 88px 0" background="radial-gradient(50% 50% at 52.09% 50%,rgba(0, 0, 0, 0.3) 67.1%,rgba(0, 0, 0, 0.4) 100%),url(https://images.unsplash.com/photo-1570398584138-59a560dc1288?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000) center center/cover repeat scroll padding-box" quarkly-title="Hero-25">
+		<Section padding="88px 0 88px 0" background="radial-gradient(50% 50% at 52.09% 50%,rgba(0, 0, 0, 0.3) 67.1%,rgba(0, 0, 0, 0.4) 100%),url(https://uploads.quarkly.io/67c737959335410018cacb84/images/codioful-formerly-gradienta-OzfD79w8ptA-unsplash.jpg?v=2025-03-24T22:08:36.756Z) center center/cover repeat scroll padding-box" quarkly-title="Hero-25">
 			<Override
 				slot="SectionContent"
 				lg-justify-content="center"
@@ -61,7 +61,7 @@ export default (() => {
 						letter-spacing="1px"
 						text-transform="uppercase"
 					>
-						Sound in Every Spectrum
+						Where Music Shines
 					</Text>
 					<Text
 						margin="0px 0px 36px 0px"
@@ -71,7 +71,7 @@ export default (() => {
 						sm-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
 						md-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
 					>
-						Prism Audio
+						Xenon Studios
 					</Text>
 					<Text
 						lg-text-align="center"
@@ -83,9 +83,7 @@ export default (() => {
 						font="--lead"
 						md-text-align="left"
 					>
-						Prism Audio is a multi-genre distributor that focuses on reliable and fast distribution for all artists
-						<br />
-						<br />
+						Xenon Studios is a multi-genre distributor that focuses on reliable and fast distribution for all artists
 						<br />
 						<br />
 						<br />
@@ -131,7 +129,7 @@ export default (() => {
 				What does prism audio do?
 			</Text>
 			<Text as="h1" font="--headline1" md-font="--headline2" margin="10px 0 0 0">
-				About Prism Audio
+				About Xenon Studios
 			</Text>
 			<Text as="p" font="--lead" margin="40px 0 20px 0">
 				We're a multi-genre label/distributor that takes pride in promoting our diverse artists and ensuring their music reaches audiences quickly and efficiently through various Digital Service Providers (DSPs). Our expertise spans multiple music styles, allowing us to cater to a wide range of tastes and preferences. We accept any artist as long as they have a minimum of one release per month. Any artist from any genre works! If you're a part of a collective, that is perfectly fine! Being signed to any PRO's is okay as well, as long as you provide your IPI number.
@@ -198,7 +196,7 @@ export default (() => {
 					sm-font="normal 600 40px/1.2 --fontFamily-sans"
 					lg-text-align="center"
 				>
-					Services at Prism Audio
+					Services at Xenon Studios
 				</Text>
 				<Text
 					as="p"
@@ -453,7 +451,7 @@ export default (() => {
 				color="#ffffff"
 				text-align="center"
 			>
-				Where does Prism Audio Distribute?
+				Where does Xenon Studios Distribute?
 			</Text>
 			<Text
 				as="p"
@@ -464,7 +462,7 @@ export default (() => {
 			>
 				Click bellow for the list!
 			</Text>
-			<Button font="--lead" margin="20px" type="link" href="https://prism-partners.netlify.app">
+			<Button font="--lead" margin="20px" type="link" href="https://xenon-partners.netlify.app">
 				Click here!
 			</Button>
 		</Section>
@@ -489,7 +487,7 @@ export default (() => {
 			>
 				Click below to get access
 			</Text>
-			<Button font="--lead" margin="20px" type="link" href="https://prism-portal.netlify.app/">
+			<Button font="--lead" margin="20px" type="link" href="https://xenon-portal.netlify.app">
 				Click here!
 			</Button>
 		</Section>
@@ -562,7 +560,13 @@ export default (() => {
 			</Box>
 		</Section>
 		<Components.QuarklycommunityKitNetlifyForm />
-		<Components.FooterUniversal />
+		<Components.FooterUniversal>
+			<Override slot="text">
+				© 2025 Xenon Studios. All rights reserved.
+				<br />
+				Site design done by minty's experiment lab (https://ebb.l5.ca/mintylab)
+			</Override>
+		</Components.FooterUniversal>
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
