@@ -126,7 +126,7 @@ export default (() => {
 				text-transform="uppercase"
 				letter-spacing="5px"
 			>
-				What does prism audio do?
+				What does Xenon studios do?
 			</Text>
 			<Text as="h1" font="--headline1" md-font="--headline2" margin="10px 0 0 0">
 				About Xenon Studios
