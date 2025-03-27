@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Section, Strong, List, Icon, Span, Button, Input } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Section, Strong, List, Icon, Span, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, Override, Formspree } from "@quarkly/components";
+import { RawHtml, Override } from "@quarkly/components";
 import * as Components from "components";
 import { FaBarcode } from "react-icons/fa";
 import { FiLock, FiMusic, FiEdit } from "react-icons/fi";
@@ -462,7 +462,7 @@ export default (() => {
 			>
 				Click bellow for the list!
 			</Text>
-			<Button font="--lead" margin="20px" type="link" href="https://xenon-partners.netlify.app">
+			<Button font="--lead" margin="20px" type="link" href="https://partners.xenonstudios.org">
 				Click here!
 			</Button>
 		</Section>
@@ -513,49 +513,13 @@ export default (() => {
 							margin="10px 0 0 0"
 							color="#ffffff"
 							sm-text-align="center"
+							width="auto"
+							height="auto"
 						>
-							Send demos and contact us here!
+							Send demos and contact us at demos@xenonstudios.org and support@xenonstudios.org
 						</Text>
 					</Box>
 					<Text margin="0px 0px 0px 0px" color="#ffffff" />
-				</Box>
-				<Box width="50%" padding="8px 8px 8px 8px" lg-width="100%">
-					<Box>
-						<Formspree endpoint="xeqpgrlv" completeText="Thanks! A member of the Prism Audio team will reach out shortly!" errorMessage="Your message was not sent. Please contact a Prism Audio team member through different means if the form is still broken">
-							<Box
-								gap="16px"
-								display="grid"
-								flex-direction="row"
-								flex-wrap="wrap"
-								grid-template-columns="repeat(2, 1fr)"
-								grid-gap="16px"
-							>
-								<Box sm-width="100%" display="flex" flex-direction="column">
-									<Text font="--base" margin="0 0 4px 0" color="#ffffff">
-										Name
-									</Text>
-									<Input width="100%" name="name" type="text" />
-								</Box>
-								<Box sm-width="100%" display="flex" flex-direction="column">
-									<Text font="--base" margin="0 0 4px 0" color="#ffffff">
-										Email
-									</Text>
-									<Input width="100%" type="email" name="email" />
-								</Box>
-								<Box display="flex" flex-direction="column" grid-column="1 / span 2">
-									<Text font="--base" margin="0 0 4px 0" color="#ffffff">
-										Message
-									</Text>
-									<Input as="textarea" rows="4" width="100%" name="message" />
-								</Box>
-								<Box display="flex" flex-direction="column" align-items="flex-start" grid-column="1 / span 2">
-									<Button>
-										Send
-									</Button>
-								</Box>
-							</Box>
-						</Formspree>
-					</Box>
 				</Box>
 			</Box>
 		</Section>
