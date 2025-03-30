@@ -529,6 +529,8 @@ export default (() => {
 				© 2025 Xenon Studios. All rights reserved.
 				<br />
 				Site design done by minty's experiment lab (https://ebb.l5.ca/mintylab)
+				<br />
+				Ran and Operated by v1x0 (https://linktr.ee/v1x0music)
 			</Override>
 		</Components.FooterUniversal>
 		<Link
@@ -551,7 +553,7 @@ export default (() => {
 			href={"https://quarkly.io/"}
 			target={"_blank"}
 		>
-			
+			Made on Quarkly
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"67c737959335410018cacb82"}>
