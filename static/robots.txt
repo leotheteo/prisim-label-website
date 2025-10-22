@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xenonstudios.org/sitemap-index.xml
+Sitemap: https://example.com/sitemap-index.xml

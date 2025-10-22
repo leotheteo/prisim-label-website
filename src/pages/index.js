@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Section, Strong, List, Icon, Span, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Section, Button, Strong, List, Icon, Span } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { RawHtml, Override } from "@quarkly/components";
@@ -23,7 +23,7 @@ export default (() => {
 			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/67c737959335410018cacb84/images/Pirsim%20Audio.png?v=2025-03-04T17:34:40.476Z"} />
 			<meta name={"msapplication-TileColor"} content={"#272782"} />
 		</Helmet>
-		<Section padding="88px 0 88px 0" background="radial-gradient(50% 50% at 52.09% 50%,rgba(0, 0, 0, 0.3) 67.1%,rgba(0, 0, 0, 0.4) 100%),url(https://uploads.quarkly.io/67c737959335410018cacb84/images/codioful-formerly-gradienta-OzfD79w8ptA-unsplash.jpg?v=2025-03-24T22:08:36.756Z) center center/cover repeat scroll padding-box" quarkly-title="Hero-25">
+		<Section padding="88px 0 88px 0" background="radial-gradient(50% 50% at 52.09% 50%,rgba(0, 0, 0, 0.3) 67.1%,rgba(0, 0, 0, 0.4) 100%),url(https://uploads.quarkly.io/67c737959335410018cacb84/images/abstract-blue-wave-background-digital-art-486@0@f.jpg?v=2025-03-31T02:11:40.799Z) center center/cover repeat scroll padding-box" quarkly-title="Hero-25">
 			<Override
 				slot="SectionContent"
 				lg-justify-content="center"
@@ -110,6 +110,35 @@ export default (() => {
 				</Box>
 			</Box>
 			<Section />
+		</Section>
+		<Section padding="80px 0" sm-padding="40px 0" background="#000000">
+			<Override slot="SectionContent" align-items="center" />
+			<Text
+				as="h2"
+				font="--headline1"
+				md-font="--headline2"
+				margin="20px 0 0 0"
+				background="rgba(255, 0, 149, 0)"
+				color="#ff0095"
+			>
+				Xenon Studios and XZ1
+			</Text>
+			<Text
+				as="p"
+				font="normal 300 20px/1.5 --fontFamily-googleRobotoCondensed"
+				margin="20px 0 20px 0"
+				text-align="center"
+				color="#ff0095"
+			>
+				Xenon Studios is now a part of XZ1 Recordings 
+Ventures. This means that current and future clients will get reliable distribution through 
+ KAMAPRO
+
+, the music distributor XZ1 uses. Clients will still be able to access publishing, but it will mean that XZ1's IPI number gets used. Xenon still offers complimentary mastering for all of it's clients. The contract will be 85/30 splits 85 for you, 15 for Xenon/XZ1) and the contract will be non exclusive. although you should still discues with us if you're planning on leaving.
+			</Text>
+			<Button font="--lead" margin="20px" type="link" href="https://www.xz1recordings.ca">
+				To XZ1 Recordings
+			</Button>
 		</Section>
 		<Section
 			text-align="center"
@@ -466,31 +495,6 @@ export default (() => {
 				Click here!
 			</Button>
 		</Section>
-		<Section padding="80px 0" sm-padding="40px 0" background="#000000">
-			<Override slot="SectionContent" align-items="center" />
-			<Text
-				as="h2"
-				font="--headline1"
-				md-font="--headline2"
-				margin="20px 0 0 0"
-				color="#ffffff"
-				text-align="center"
-			>
-				Access our submission portal
-			</Text>
-			<Text
-				as="p"
-				font="--lead"
-				margin="20px 0 20px 0"
-				text-align="center"
-				color="#ffffff"
-			>
-				Click below to get access
-			</Text>
-			<Button font="--lead" margin="20px" type="link" href="https://xenon-portal.netlify.app">
-				Click here!
-			</Button>
-		</Section>
 		<Section background="--color-dark" color="--dark" padding="64px 0 64px 0">
 			<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap" border-color="#ffffff">
 				<Box padding="16px 16px 16px 16px" width="50%" lg-width="100%">
@@ -530,7 +534,9 @@ export default (() => {
 				<br />
 				Site design done by minty's experiment lab (https://ebb.l5.ca/mintylab)
 				<br />
-				Ran and Operated by v1x0 (https://linktr.ee/v1x0music)
+				Owned by leotheteo (https://leotheteo.org)
+				<br />
+				Operated by XZ1 Recording Ventures (https://www.xz1recordings.ca){"\n\n"}
 			</Override>
 		</Components.FooterUniversal>
 		<Link

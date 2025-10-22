@@ -76,9 +76,13 @@ export default (() => {
 		</Section>
 		<Components.FooterUniversal>
 			<Override slot="text">
-				© 2025 Xenon Studios.All rights reserved.
+				© 2025 Xenon Studios. All rights reserved.
 				<br />
 				Site design done by minty's experiment lab (https://ebb.l5.ca/mintylab)
+				<br />
+				Owned by leotheteo (https://leotheteo.org)
+				<br />
+				Operated by XZ1 Recording Ventures (https://www.xz1recordings.ca)
 			</Override>
 		</Components.FooterUniversal>
 		<Link
