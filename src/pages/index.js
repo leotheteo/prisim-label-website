@@ -134,7 +134,7 @@ export default (() => {
 Ventures. This means that current and future clients will get reliable distribution through 
  KAMAPRO
 
-, the music distributor XZ1 uses. Clients will still be able to access publishing, but it will mean that XZ1's IPI number gets used. Xenon still offers complimentary mastering for all of it's clients. The contract will be 85/30 splits 85 for you, 15 for Xenon/XZ1) and the contract will be non exclusive. although you should still discues with us if you're planning on leaving.
+, the music distributor XZ1 uses. Clients will still be able to access publishing, but it will mean that XZ1's IPI number gets used. Xenon still offers complimentary mastering for all of it's clients. The contract will be 85/15 splits 85 for you, 15 for Xenon/XZ1) and the contract will be non exclusive. although you should still discues with us if you're planning on leaving.
 			</Text>
 			<Button font="--lead" margin="20px" type="link" href="https://www.xz1recordings.ca">
 				To XZ1 Recordings
