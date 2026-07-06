@@ -1,3 +1,6 @@
+THIS IS NOT USED ANYMORE, IT IS DEAD
+
+
 <p align="center">
   <img src="http://uploads.quarkly.io/readme/gatsby/readme-quarkly-and-gatsby.png" width="480px" alt="Gatsby project from Quarkly">
 </p>
